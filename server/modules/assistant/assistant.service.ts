@@ -55,6 +55,7 @@ export async function answerQuestion(question: string) {
   const known = new Set(workspace.fields.map((field) => field.id))
   return {
     ...result.object,
-    citations: result.object.citations.filter((id) => known.has(id)),
+    citations: result.object.citations.filter((id) => known.has(id)).slice(0, 6),
+    followUps: result.object.followUps ?? [],
   }
 }

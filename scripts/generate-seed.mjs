@@ -516,7 +516,7 @@ for (const survey of surveys) {
           ? "Flagged for agronomist review. Not yet verified in the field."
           : null,
       resolvedAt: null,
-      model: "SAM 3.1 · Muse Spark",
+      model: "Muse Spark (vision)",
       modelRunAt: survey.completedAt,
     })
 

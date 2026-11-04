@@ -25,6 +25,7 @@ export function buildAnalysisPrompt(
     farm: string
     findings: { category: string; severity: string }[]
   },
+  segments: { prompt: string; count: number; coverage: number }[] = [],
 ) {
   const crop = field.crop ?? "no active crop cycle"
   const stage = field.stage ? `, stage ${field.stage}` : ""
@@ -38,7 +39,16 @@ export function buildAnalysisPrompt(
     `Crop: ${crop}${stage}.`,
     `Sensor: ${input.sensor}${captured}.`,
     `Previous findings on this field: ${previous}.`,
+    segments.length
+      ? `SAM 3.1 segmentation of this frame: ${segments
+          .map((segment) => `${segment.prompt} — ${segment.count} region(s), ${segment.coverage}% of frame`)
+          .join("; ")}.`
+      : "SAM 3.1 segmentation unavailable for this frame.",
     "",
-    "Analyse the attached frame.",
+    "Analyse the attached frame. Treat the segmentation numbers as measurements, not conclusions.",
+    "",
+    "Reply with ONLY a JSON object — no prose, no code fences:",
+    '{"usable": true, "summary": "one short paragraph", "observations": [{"category": "Disease symptoms | Pest damage | Weed presence | Crop gaps | Growth variability | Discoloration | Water stress indicators | Nutrient stress indicators", "severity": "low | medium | high | critical", "confidence": 0.0, "observation": "visible evidence", "interpretation": "suspected explanation", "recommendation": "field check", "areaShare": 0}], "limitations": ["..."]}',
+    "If the frame is not a crop canopy or close-up, set usable to false, observations to [], and explain in limitations.",
   ].join("\n")
 }

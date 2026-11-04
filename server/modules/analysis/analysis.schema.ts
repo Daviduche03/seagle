@@ -22,23 +22,36 @@ export const analysisRequestSchema = z.object({
 
 export type AnalysisRequest = z.infer<typeof analysisRequestSchema>
 
+const observationSchema = z.object({
+  category: z.string().describe("One of the observation categories"),
+  severity: z.enum(["low", "medium", "high", "critical"]).default("medium"),
+  confidence: z.number().min(0).max(1).default(0.6),
+  observation: z.string().describe("What is visibly present in the image"),
+  interpretation: z.string().describe("A suspected explanation, clearly not a diagnosis"),
+  recommendation: z.string().describe("A concrete field verification step"),
+  areaShare: z
+    .union([z.number(), z.string()])
+    .optional()
+    .describe("Approximate percentage of the frame affected"),
+})
+
+/**
+ * The model sometimes answers with a single flat observation instead of the
+ * array we ask for. Both shapes are accepted here and normalised in the
+ * service, so one odd completion never turns into a 500 during a demo.
+ */
 export const analysisResultSchema = z.object({
-  usable: z.boolean(),
-  summary: z.string(),
-  limitations: z.array(z.string()).max(4),
-  observations: z
-    .array(
-      z.object({
-        category: z.enum(OBSERVATION_CATEGORIES),
-        severity: z.enum(["low", "medium", "high", "critical"]),
-        confidence: z.number().min(0).max(1),
-        observation: z.string().describe("What is visibly present in the image"),
-        interpretation: z.string().describe("A suspected explanation, clearly not a diagnosis"),
-        recommendation: z.string().describe("A concrete field verification step"),
-        areaShare: z.number().min(0).max(100).describe("Approximate percentage of the frame affected"),
-      }),
-    )
-    .max(4),
+  usable: z.boolean().default(true),
+  summary: z.string().optional().default(""),
+  observations: z.array(observationSchema).optional(),
+  category: z.string().optional(),
+  severity: z.enum(["low", "medium", "high", "critical"]).optional(),
+  confidence: z.number().min(0).max(1).optional(),
+  observation: z.string().optional(),
+  interpretation: z.string().optional(),
+  recommendation: z.string().optional(),
+  areaShare: z.union([z.number(), z.string()]).optional(),
+  limitations: z.union([z.string(), z.array(z.string())]).optional(),
 })
 
 export type AnalysisResult = z.infer<typeof analysisResultSchema>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T13:05:02.813Z",
+  "generatedAt": "2026-11-04T13:59:08.027Z",
   "organization": {
     "id": "org_rva",
     "name": "Rift Valley Agriculture",
@@ -4119,7 +4119,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-17T10:40:00.000Z"
     },
     {
@@ -4172,7 +4172,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-09-28T10:40:00.000Z"
     },
     {
@@ -4196,7 +4196,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-31T10:40:00.000Z"
     },
     {
@@ -4249,7 +4249,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-31T10:40:00.000Z"
     },
     {
@@ -4298,7 +4298,7 @@
       "reviewedBy": "usr_peter",
       "reviewNote": "Checked in the field, treated and closed.",
       "resolvedAt": "2026-10-22T06:20:00.000Z",
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-15T10:40:00.000Z"
     },
     {
@@ -4351,7 +4351,7 @@
       "reviewedBy": "usr_grace",
       "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-15T10:40:00.000Z"
     },
     {
@@ -4400,7 +4400,7 @@
       "reviewedBy": "usr_peter",
       "reviewNote": "Checked in the field, treated and closed.",
       "resolvedAt": "2026-09-29T06:20:00.000Z",
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-09-22T10:40:00.000Z"
     },
     {
@@ -4449,7 +4449,7 @@
       "reviewedBy": "usr_grace",
       "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-30T10:40:00.000Z"
     },
     {
@@ -4502,7 +4502,7 @@
       "reviewedBy": "usr_peter",
       "reviewNote": "Checked in the field, treated and closed.",
       "resolvedAt": "2026-10-24T06:20:00.000Z",
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-17T10:40:00.000Z"
     },
     {
@@ -4526,7 +4526,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-17T10:40:00.000Z"
     },
     {
@@ -4550,7 +4550,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-31T10:40:00.000Z"
     },
     {
@@ -4603,7 +4603,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-31T10:40:00.000Z"
     },
     {
@@ -4656,7 +4656,7 @@
       "reviewedBy": "usr_peter",
       "reviewNote": "Checked in the field, treated and closed.",
       "resolvedAt": "2026-10-18T06:20:00.000Z",
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-11T10:40:00.000Z"
     },
     {
@@ -4713,7 +4713,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-30T10:40:00.000Z"
     },
     {
@@ -4766,7 +4766,7 @@
       "reviewedBy": "usr_grace",
       "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-30T10:40:00.000Z"
     },
     {
@@ -4815,7 +4815,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-11T10:40:00.000Z"
     },
     {
@@ -4868,7 +4868,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-29T10:40:00.000Z"
     },
     {
@@ -4921,7 +4921,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-12T10:40:00.000Z"
     },
     {
@@ -4945,7 +4945,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-09-23T10:40:00.000Z"
     },
     {
@@ -4998,7 +4998,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-17T10:40:00.000Z"
     },
     {
@@ -5055,7 +5055,7 @@
       "reviewedBy": null,
       "reviewNote": null,
       "resolvedAt": null,
-      "model": "SAM 3.1 · Muse Spark",
+      "model": "Muse Spark (vision)",
       "modelRunAt": "2026-10-17T10:40:00.000Z"
     }
   ],

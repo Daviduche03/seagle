@@ -136,7 +136,7 @@ function FindingDetail({ observation, onClose }: { observation: Observation; onC
           <Field label="Flagged area" value={observation.areaHa ? `${observation.areaHa.toFixed(2)} ha` : "Not mapped"} />
           <Field label="Survey" value={survey?.name ?? "—"} sub={survey ? formatDate(survey.capturedAt) : undefined} />
           <Field label="Sensor" value={survey?.sensor ?? "—"} sub={survey?.hasGeo ? "Georeferenced" : "No GPS mapping"} />
-          <Field label="Pipeline" value={observation.model} sub={observation.modelRunAt ? relativeTime(observation.modelRunAt) : undefined} />
+          <Field label="Analyzed by" value={observation.model} sub={observation.modelRunAt ? relativeTime(observation.modelRunAt) : undefined} />
           <Field
             label="Reviewer"
             value={reviewer?.name ?? "Not reviewed"}

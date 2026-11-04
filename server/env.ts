@@ -10,8 +10,8 @@ export const env = {
   port: Number(process.env.PORT ?? 8787),
   apiKey: process.env.META_API_KEY ?? "",
   baseURL: process.env.META_BASE_URL ?? "https://api.meta.ai/v1",
-  model: process.env.META_MODEL ?? "muse-spark",
-  visionModel: process.env.META_VISION_MODEL ?? process.env.META_MODEL ?? "muse-spark",
+  model: process.env.META_MODEL ?? "muse-spark-1.3",
+  visionModel: process.env.META_VISION_MODEL ?? process.env.META_MODEL ?? "muse-spark-1.3",
   allOrigins: process.env.ALLOW_ORIGIN ?? "http://localhost:5180",
 }
 

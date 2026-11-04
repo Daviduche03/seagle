@@ -326,6 +326,7 @@ interface FrameAnalysis {
   summary: string
   limitations: string[]
   observations: FrameObservation[]
+  segmentation?: { prompt: string; count: number; coverage: number }[]
 }
 
 function UploadDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {
@@ -555,6 +556,18 @@ function UploadDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (op
                     </p>
                   </div>
                 ))}
+                {result.segmentation && result.segmentation.some((segment) => segment.count > 0) && (
+                  <div className="flex flex-wrap items-center gap-1.5 text-[10.5px]">
+                    <span className="rounded-[4px] bg-muted px-1.5 py-0.5 font-medium text-muted-foreground">SAM 3.1</span>
+                    {result.segmentation
+                      .filter((segment) => segment.count > 0)
+                      .map((segment) => (
+                        <span key={segment.prompt} className="rounded-[4px] border border-border px-1.5 py-0.5 text-muted-foreground">
+                          {segment.prompt} · {segment.count} region{segment.count === 1 ? "" : "s"} · {segment.coverage}%
+                        </span>
+                      ))}
+                  </div>
+                )}
                 {result.limitations.length > 0 && (
                   <p className="text-[10.5px] text-muted-foreground">Limits: {result.limitations.join(" ")}</p>
                 )}
