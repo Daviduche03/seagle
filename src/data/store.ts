@@ -1,4 +1,4 @@
-import seedJson from "./seed.json"
+import fixture from "./seed.json"
 import type {
   Farm,
   Field,
@@ -9,23 +9,71 @@ import type {
   TeamMember,
 } from "./types"
 
-export const seed = seedJson as unknown as Seed
-export const organization = seed.organization
-export const farms = seed.farms
-export const fields = seed.fields
-export const team = seed.team
-export const surveys = seed.surveys
-export const observations = seed.observations
-export const actions = seed.actions
-export const reports = seed.reports
-export const events = seed.events
+/**
+ * The workspace is loaded from the API (SQLite behind it) once at boot.
+ * The bundled fixture is the offline fallback, so the demo still opens if the
+ * API is down — it is the same shape, just stale.
+ */
+let state = fixture as unknown as Seed
 
-const fieldById = new Map(fields.map((f) => [f.id, f]))
-const farmById = new Map(farms.map((f) => [f.id, f]))
-const memberById = new Map(team.map((m) => [m.id, m]))
-const surveyById = new Map(surveys.map((s) => [s.id, s]))
-const observationById = new Map(observations.map((o) => [o.id, o]))
-const cycleById = new Map(seed.cropCycles.map((c) => [c.id, c]))
+export let seed: Seed = state
+export let organization = state.organization
+export let farms = state.farms
+export let fields = state.fields
+export let team = state.team
+export let surveys = state.surveys
+export let observations = state.observations
+export let actions = state.actions
+export let reports = state.reports
+export let events = state.events
+
+let fieldById = new Map<string, Field>()
+let farmById = new Map<string, Farm>()
+let memberById = new Map<string, TeamMember>()
+let surveyById = new Map<string, Survey>()
+let observationById = new Map<string, Observation>()
+let cycleById = new Map<string, CropCycle>()
+
+function rebuild() {
+  fieldById = new Map(fields.map((field) => [field.id, field]))
+  farmById = new Map(farms.map((farm) => [farm.id, farm]))
+  memberById = new Map(team.map((member) => [member.id, member]))
+  surveyById = new Map(surveys.map((survey) => [survey.id, survey]))
+  observationById = new Map(observations.map((observation) => [observation.id, observation]))
+  cycleById = new Map(seed.cropCycles.map((cycle) => [cycle.id, cycle]))
+}
+
+export function initWorkspace(data: Seed) {
+  state = data
+  seed = data
+  organization = data.organization
+  farms = data.farms
+  fields = data.fields
+  team = data.team
+  surveys = data.surveys
+  observations = data.observations
+  actions = data.actions
+  reports = data.reports
+  events = data.events
+  rebuild()
+}
+
+/** Prefer the API, fall back to the fixture. Called once before the app renders. */
+export async function loadWorkspace(): Promise<"api" | "fixture"> {
+  try {
+    const response = await fetch("/api/bootstrap")
+    if (!response.ok) throw new Error(`status ${response.status}`)
+    const data = (await response.json()) as Seed
+    if (!data?.farms?.length) throw new Error("empty workspace")
+    initWorkspace(data)
+    return "api"
+  } catch {
+    rebuild()
+    return "fixture"
+  }
+}
+
+rebuild()
 
 export const getFarm = (id: string | undefined | null): Farm | undefined =>
   id ? farmById.get(id) : undefined

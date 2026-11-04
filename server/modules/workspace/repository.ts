@@ -1,5 +1,84 @@
-import { readFileSync } from "node:fs"
-import { resolve } from "node:path"
+import { db } from "../../db/client"
+import type { Seed } from "../../../src/data/types"
+
+/** The API's only data access point. Everything else asks it questions. */
+
+let seedCache: Seed | null = null
+
+const parse = <T>(value: unknown, fallback: T): T => {
+  if (value == null) return fallback
+  try {
+    return JSON.parse(String(value)) as T
+  } catch {
+    return fallback
+  }
+}
+
+const camel = (row: Record<string, unknown>) => {
+  const out: Record<string, unknown> = {}
+  for (const [key, value] of Object.entries(row)) {
+    out[key.replace(/_([a-z])/g, (_, letter: string) => letter.toUpperCase())] = value
+  }
+  return out
+}
+
+const rows = (table: string) => (db.prepare(`SELECT * FROM ${table}`).all() as Record<string, unknown>[]).map(camel)
+
+export function getSeed(): Seed {
+  if (seedCache) return seedCache
+
+  const organization = rows("organizations")[0] as unknown as Seed["organization"]
+  const team = rows("team_members").map((row) => ({ ...row, farms: parse(row.farms, []) })) as unknown as Seed["team"]
+  const farms = rows("farms").map((row) => ({
+    ...row,
+    centroid: parse(row.centroid, [0, 0]),
+    boundary: parse(row.boundary, []),
+  })) as unknown as Seed["farms"]
+  const fields = rows("fields").map((row) => ({
+    ...row,
+    boundary: parse(row.boundary, []),
+    centroid: parse(row.centroid, [0, 0]),
+  })) as unknown as Seed["fields"]
+  const cropCycles = rows("crop_cycles") as unknown as Seed["cropCycles"]
+  const surveys = rows("surveys").map((row) => ({
+    ...row,
+    hasGeo: Boolean(row.hasGeo),
+    assets: parse(row.assets, []),
+  })) as unknown as Seed["surveys"]
+  const observations = rows("observations").map((row) => ({
+    ...row,
+    zone: row.zone ? parse(row.zone, null) : null,
+  })) as unknown as Seed["observations"]
+  const actions = rows("actions") as unknown as Seed["actions"]
+  const reports = rows("reports").map((row) => ({ ...row, reviewed: Boolean(row.reviewed) })) as unknown as Seed["reports"]
+  const events = rows("events") as unknown as Seed["events"]
+  const assets = surveys.flatMap((survey) => survey.assets)
+
+  seedCache = {
+    generatedAt: new Date().toISOString(),
+    organization,
+    team,
+    farms,
+    fields,
+    cropCycles,
+    surveys,
+    assets,
+    observations,
+    actions,
+    reports,
+    events,
+  } as Seed
+
+  return seedCache
+}
+
+export function invalidateWorkspace() {
+  seedCache = null
+}
+
+// ---------------------------------------------------------------------------
+// Derived views used by the assistant and the image analysis
+// ---------------------------------------------------------------------------
 
 export interface WorkspaceSnapshot {
   organization: string
@@ -28,40 +107,8 @@ export interface WorkspaceSnapshot {
   }[]
 }
 
-interface Seed {
-  organization: { name: string }
-  farms: { id: string; name: string; region: string; totalAreaHa: number }[]
-  fields: {
-    id: string
-    name: string
-    farmId: string
-    areaHa: number
-    status: string
-    cropCycleId: string | null
-  }[]
-  cropCycles: { id: string; fieldId: string; crop: string; growthStage: string }[]
-  surveys: { fieldId: string; capturedAt: string; status: string }[]
-  observations: {
-    id: string
-    fieldId: string
-    category: string
-    severity: string
-    status: string
-    confidence: number
-    detectedAt: string
-    observation: string
-  }[]
-}
-
-let cache: WorkspaceSnapshot | null = null
-
-/** Read the same demo dataset the frontend renders, once per process. */
 export function getWorkspace(): WorkspaceSnapshot {
-  if (cache) return cache
-
-  const seedPath = resolve(process.cwd(), "src/data/seed.json")
-  const seed = JSON.parse(readFileSync(seedPath, "utf8")) as Seed
-
+  const seed = getSeed()
   const farmById = new Map(seed.farms.map((farm) => [farm.id, farm]))
   const cycleByField = new Map(seed.cropCycles.map((cycle) => [cycle.fieldId, cycle]))
   const lastSurvey = new Map<string, string>()
@@ -74,7 +121,7 @@ export function getWorkspace(): WorkspaceSnapshot {
     }
   }
 
-  cache = {
+  return {
     organization: seed.organization.name,
     farms: seed.farms.map((farm) => ({
       id: farm.id,
@@ -109,8 +156,6 @@ export function getWorkspace(): WorkspaceSnapshot {
       observation: obs.observation,
     })),
   }
-
-  return cache
 }
 
 export function getFieldContext(fieldId: string) {
@@ -119,8 +164,6 @@ export function getFieldContext(fieldId: string) {
   if (!field) return null
   return {
     field,
-    findings: workspace.findings
-      .filter((finding) => finding.fieldId === fieldId)
-      .slice(0, 8),
+    findings: workspace.findings.filter((finding) => finding.fieldId === fieldId).slice(0, 8),
   }
 }

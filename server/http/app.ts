@@ -7,6 +7,7 @@ import { errorHandler } from "./errors"
 import { analysisRouter } from "../modules/analysis/analysis.routes"
 import { assistantRouter } from "../modules/assistant/assistant.routes"
 import { reportsRouter } from "../modules/reports/reports.routes"
+import { workspaceRouter } from "../modules/workspace/workspace.routes"
 
 export function createApp() {
   const app = express()
@@ -18,6 +19,7 @@ export function createApp() {
     res.json({ ok: true, ai: aiConfigured, model: env.model, visionModel: env.visionModel })
   })
 
+  app.use("/api", workspaceRouter)
   app.use("/api", analysisRouter)
   app.use("/api", assistantRouter)
   app.use("/api", reportsRouter)

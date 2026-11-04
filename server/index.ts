@@ -1,5 +1,8 @@
 import { createApp } from "./http/app"
 import { aiConfigured, env } from "./env"
+import { seedDatabase } from "./db/seed"
+
+seedDatabase()
 
 const app = createApp()
 
