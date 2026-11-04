@@ -64,6 +64,8 @@ export async function analyseFrame(input: AnalysisRequest) {
       prompt: segment.prompt,
       count: segment.count,
       coverage: segment.coverage,
+      boxes: segment.boxes,
+      frame: segment.frame,
     })),
     field: context.field,
     model: "sam-3.1 + muse-spark-1.3",

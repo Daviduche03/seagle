@@ -327,7 +327,13 @@ interface FrameAnalysis {
   summary: string
   limitations: string[]
   observations: FrameObservation[]
-  segmentation?: { prompt: string; count: number; coverage: number }[]
+  segmentation?: {
+    prompt: string
+    count: number
+    coverage: number
+    boxes: { x1: number; y1: number; x2: number; y2: number }[]
+    frame: { width: number; height: number } | null
+  }[]
 }
 
 function UploadDialog({
@@ -346,6 +352,7 @@ function UploadDialog({
   const [file, setFile] = React.useState<{ name: string; dataUrl: string } | null>(null)
   const [result, setResult] = React.useState<FrameAnalysis | null>(null)
   const [error, setError] = React.useState<string | null>(null)
+  const [activePrompt, setActivePrompt] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     if (!open) {
@@ -356,6 +363,7 @@ function UploadDialog({
       setSensor("RGB")
       setResult(null)
       setError(null)
+      setActivePrompt(null)
     }
   }, [open])
 
@@ -386,6 +394,16 @@ function UploadDialog({
     reader.readAsDataURL(selected)
   }
 
+  const bestSegment = React.useMemo(() => {
+    if (!result?.segmentation) return null
+    const candidates = result.segmentation.filter((segment) => segment.count > 0 && segment.boxes.length > 0)
+    if (!candidates.length) return null
+    return candidates.reduce((best, current) => (current.coverage > best.coverage ? current : best))
+  }, [result])
+
+  const shownSegment =
+    result?.segmentation?.find((segment) => segment.prompt === activePrompt) ?? bestSegment
+
   const start = () => {
     setStep("processing")
     setStage(0)
@@ -413,7 +431,7 @@ function UploadDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[460px]">
+      <DialogContent className="max-h-[88vh] max-w-[460px] overflow-y-auto">
         {step === "setup" && (
           <>
             <DialogHeader>
@@ -555,6 +573,52 @@ function UploadDialog({
               </div>
             ) : result ? (
               <div className="space-y-2.5">
+                {shownSegment && file && shownSegment.frame && (
+                  <div className="space-y-1.5">
+                    <div className="relative overflow-hidden rounded-md border border-border bg-[#1b241f]">
+                      <img src={file.dataUrl} alt="Analysed frame" className="block w-full" />
+                      <svg
+                        viewBox={`0 0 ${shownSegment.frame.width} ${shownSegment.frame.height}`}
+                        className="absolute inset-0 h-full w-full"
+                        preserveAspectRatio="none"
+                      >
+                        {shownSegment.boxes.map((box, index) => (
+                          <rect
+                            key={index}
+                            x={box.x1}
+                            y={box.y1}
+                            width={box.x2 - box.x1}
+                            height={box.y2 - box.y1}
+                            fill="none"
+                            stroke="#FFD166"
+                            strokeWidth={2}
+                            vectorEffect="non-scaling-stroke"
+                          />
+                        ))}
+                      </svg>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-1.5 text-[10.5px]">
+                      <span className="rounded-[4px] bg-muted px-1.5 py-0.5 font-medium text-muted-foreground">SAM 3.1</span>
+                      {(result.segmentation ?? [])
+                        .filter((segment) => segment.count > 0)
+                        .map((segment) => (
+                          <button
+                            key={segment.prompt}
+                            onClick={() => setActivePrompt(segment.prompt)}
+                            className={cn(
+                              "rounded-[4px] border px-1.5 py-0.5 transition-colors",
+                              shownSegment.prompt === segment.prompt
+                                ? "border-primary/40 bg-accent text-accent-foreground"
+                                : "border-border text-muted-foreground hover:bg-muted",
+                            )}
+                          >
+                            {segment.prompt} · {segment.count} · {segment.coverage}%
+                          </button>
+                        ))}
+                    </div>
+                  </div>
+                )}
+
                 <p className="text-[12px] leading-relaxed">{result.summary}</p>
                 {result.observations.map((obs, index) => (
                   <div key={index} className="rounded-md border border-border px-2.5 py-2">
@@ -571,18 +635,6 @@ function UploadDialog({
                     </p>
                   </div>
                 ))}
-                {result.segmentation && result.segmentation.some((segment) => segment.count > 0) && (
-                  <div className="flex flex-wrap items-center gap-1.5 text-[10.5px]">
-                    <span className="rounded-[4px] bg-muted px-1.5 py-0.5 font-medium text-muted-foreground">SAM 3.1</span>
-                    {result.segmentation
-                      .filter((segment) => segment.count > 0)
-                      .map((segment) => (
-                        <span key={segment.prompt} className="rounded-[4px] border border-border px-1.5 py-0.5 text-muted-foreground">
-                          {segment.prompt} · {segment.count} region{segment.count === 1 ? "" : "s"} · {segment.coverage}%
-                        </span>
-                      ))}
-                  </div>
-                )}
                 {result.limitations.length > 0 && (
                   <p className="text-[10.5px] text-muted-foreground">Limits: {result.limitations.join(" ")}</p>
                 )}
