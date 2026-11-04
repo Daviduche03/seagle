@@ -1,0 +1,6198 @@
+{
+  "generatedAt": "2026-11-04T13:05:02.813Z",
+  "organization": {
+    "id": "org_rva",
+    "name": "Rift Valley Agriculture",
+    "legalName": "Rift Valley Agriculture Ltd.",
+    "country": "Kenya",
+    "region": "Rift Valley",
+    "timezone": "Africa/Nairobi",
+    "plan": "Operations",
+    "createdAt": "2025-09-10T08:00:00.000Z"
+  },
+  "team": [
+    {
+      "id": "usr_amara",
+      "name": "Amara Njeri",
+      "role": "Organization owner",
+      "email": "amara@riftvalley.ag",
+      "phone": "+254 700 118 402",
+      "farms": [],
+      "status": "active",
+      "lastActive": "2026-11-04T06:12:00.000Z",
+      "invites": 0
+    },
+    {
+      "id": "usr_david",
+      "name": "David Otieno",
+      "role": "Farm manager",
+      "email": "david@riftvalley.ag",
+      "phone": "+254 711 204 887",
+      "farms": [
+        "farm_kilima"
+      ],
+      "status": "active",
+      "lastActive": "2026-11-04T05:48:00.000Z"
+    },
+    {
+      "id": "usr_grace",
+      "name": "Grace Wanjiru",
+      "role": "Agronomist",
+      "email": "grace@riftvalley.ag",
+      "phone": "+254 722 663 019",
+      "farms": [
+        "farm_kilima",
+        "farm_nyota"
+      ],
+      "status": "active",
+      "lastActive": "2026-11-04T07:05:00.000Z"
+    },
+    {
+      "id": "usr_peter",
+      "name": "Peter Mwangi",
+      "role": "Field supervisor",
+      "email": "peter@riftvalley.ag",
+      "phone": "+254 733 550 771",
+      "farms": [
+        "farm_kilima",
+        "farm_baraka"
+      ],
+      "status": "active",
+      "lastActive": "2026-11-03T16:40:00.000Z"
+    },
+    {
+      "id": "usr_faith",
+      "name": "Faith Achieng",
+      "role": "Field worker",
+      "email": "faith@riftvalley.ag",
+      "phone": "+254 744 091 226",
+      "farms": [
+        "farm_nyota"
+      ],
+      "status": "active",
+      "lastActive": "2026-11-04T06:02:00.000Z"
+    },
+    {
+      "id": "usr_samuel",
+      "name": "Samuel Kiptoo",
+      "role": "Read-only viewer",
+      "email": "samuel@riftvalley.ag",
+      "phone": "+254 755 330 118",
+      "farms": [],
+      "status": "invited",
+      "lastActive": null
+    }
+  ],
+  "farms": [
+    {
+      "id": "farm_kilima",
+      "organizationId": "org_rva",
+      "name": "Kilima Farm",
+      "region": "Nakuru County",
+      "country": "Kenya",
+      "managerId": "usr_david",
+      "primaryCrop": "Maize",
+      "totalAreaHa": 356.2,
+      "fieldCount": 8,
+      "centroid": [
+        36.170069,
+        -0.199985
+      ],
+      "boundary": [
+        [
+          36.149366,
+          -0.208844
+        ],
+        [
+          36.190744,
+          -0.208404
+        ],
+        [
+          36.190084,
+          -0.191126
+        ],
+        [
+          36.150246,
+          -0.191346
+        ]
+      ],
+      "status": "active",
+      "rainfall": "780 mm/yr",
+      "elevation": "1,860 m",
+      "createdAt": "2025-09-30T08:00:00.000Z"
+    },
+    {
+      "id": "farm_nyota",
+      "organizationId": "org_rva",
+      "name": "Nyota Farm",
+      "region": "Narok County",
+      "country": "Kenya",
+      "managerId": "usr_grace",
+      "primaryCrop": "Wheat",
+      "totalAreaHa": 171.5,
+      "fieldCount": 4,
+      "centroid": [
+        35.830058,
+        -1.050104
+      ],
+      "boundary": [
+        [
+          35.819654,
+          -1.058677
+        ],
+        [
+          35.840391,
+          -1.058237
+        ],
+        [
+          35.839731,
+          -1.041424
+        ],
+        [
+          35.820534,
+          -1.041644
+        ]
+      ],
+      "status": "active",
+      "rainfall": "520 mm/yr",
+      "elevation": "1,860 m",
+      "createdAt": "2025-09-30T08:00:00.000Z"
+    },
+    {
+      "id": "farm_baraka",
+      "organizationId": "org_rva",
+      "name": "Baraka Farm",
+      "region": "Uasin Gishu County",
+      "country": "Kenya",
+      "managerId": "usr_peter",
+      "primaryCrop": "Potato",
+      "totalAreaHa": 150.8,
+      "fieldCount": 4,
+      "centroid": [
+        35.100203,
+        0.600104
+      ],
+      "boundary": [
+        [
+          35.089816,
+          0.591835
+        ],
+        [
+          35.110522,
+          0.592275
+        ],
+        [
+          35.109862,
+          0.608473
+        ],
+        [
+          35.090696,
+          0.608253
+        ]
+      ],
+      "status": "active",
+      "rainfall": "780 mm/yr",
+      "elevation": "2,140 m",
+      "createdAt": "2025-09-30T08:00:00.000Z"
+    }
+  ],
+  "fields": [
+    {
+      "id": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "name": "Acacia Block",
+      "code": "FLD-KI-01",
+      "areaHa": 39.7,
+      "boundary": [
+        [
+          36.151973,
+          -0.20612
+        ],
+        [
+          36.158665,
+          -0.206225
+        ],
+        [
+          36.158795,
+          -0.201441
+        ],
+        [
+          36.152037,
+          -0.20131
+        ]
+      ],
+      "centroid": [
+        36.155365,
+        -0.20377
+      ],
+      "status": "critical",
+      "irrigation": "Pivot",
+      "soil": "Clay loam",
+      "createdAt": "2025-09-30T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_01"
+    },
+    {
+      "id": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "name": "North Ridge",
+      "code": "FLD-KI-02",
+      "areaHa": 34.8,
+      "boundary": [
+        [
+          36.161957,
+          -0.205946
+        ],
+        [
+          36.168136,
+          -0.205959
+        ],
+        [
+          36.168101,
+          -0.201305
+        ],
+        [
+          36.161969,
+          -0.201421
+        ]
+      ],
+      "centroid": [
+        36.165055,
+        -0.203661
+      ],
+      "status": "attention",
+      "irrigation": "Drip",
+      "soil": "Clay loam",
+      "createdAt": "2025-10-07T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_02"
+    },
+    {
+      "id": "fld_kilima_03",
+      "farmId": "farm_kilima",
+      "name": "Riverside",
+      "code": "FLD-KI-03",
+      "areaHa": 52.3,
+      "boundary": [
+        [
+          36.170906,
+          -0.206644
+        ],
+        [
+          36.178575,
+          -0.20659
+        ],
+        [
+          36.178677,
+          -0.200888
+        ],
+        [
+          36.171173,
+          -0.201141
+        ]
+      ],
+      "centroid": [
+        36.174855,
+        -0.203826
+      ],
+      "status": "healthy",
+      "irrigation": "Rain-fed",
+      "soil": "Clay loam",
+      "createdAt": "2025-10-14T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_03"
+    },
+    {
+      "id": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "name": "Kilima East",
+      "code": "FLD-KI-04",
+      "areaHa": 34.8,
+      "boundary": [
+        [
+          36.181688,
+          -0.205968
+        ],
+        [
+          36.187724,
+          -0.206071
+        ],
+        [
+          36.187975,
+          -0.201344
+        ],
+        [
+          36.181645,
+          -0.201537
+        ]
+      ],
+      "centroid": [
+        36.184791,
+        -0.203712
+      ],
+      "status": "review",
+      "irrigation": "Pivot",
+      "soil": "Clay loam",
+      "createdAt": "2025-10-21T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_04"
+    },
+    {
+      "id": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "name": "Mlima Plot",
+      "code": "FLD-KI-05",
+      "areaHa": 53.6,
+      "boundary": [
+        [
+          36.151629,
+          -0.199037
+        ],
+        [
+          36.159068,
+          -0.199244
+        ],
+        [
+          36.159352,
+          -0.193519
+        ],
+        [
+          36.151566,
+          -0.193326
+        ]
+      ],
+      "centroid": [
+        36.155407,
+        -0.19626
+      ],
+      "status": "attention",
+      "irrigation": "Drip",
+      "soil": "Clay loam",
+      "createdAt": "2025-10-28T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_05"
+    },
+    {
+      "id": "fld_kilima_06",
+      "farmId": "farm_kilima",
+      "name": "Dam Field",
+      "code": "FLD-KI-06",
+      "areaHa": 37.8,
+      "boundary": [
+        [
+          36.161834,
+          -0.198698
+        ],
+        [
+          36.168364,
+          -0.198568
+        ],
+        [
+          36.168418,
+          -0.193894
+        ],
+        [
+          36.161938,
+          -0.193922
+        ]
+      ],
+      "centroid": [
+        36.165127,
+        -0.196274
+      ],
+      "status": "healthy",
+      "irrigation": "Rain-fed",
+      "soil": "Clay loam",
+      "createdAt": "2025-11-04T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_06"
+    },
+    {
+      "id": "fld_kilima_07",
+      "farmId": "farm_kilima",
+      "name": "School Block",
+      "code": "FLD-KI-07",
+      "areaHa": 50.3,
+      "boundary": [
+        [
+          36.171133,
+          -0.199126
+        ],
+        [
+          36.178494,
+          -0.19895
+        ],
+        [
+          36.178785,
+          -0.193475
+        ],
+        [
+          36.17124,
+          -0.193618
+        ]
+      ],
+      "centroid": [
+        36.174909,
+        -0.196281
+      ],
+      "status": "unverified",
+      "irrigation": "Pivot",
+      "soil": "Clay loam",
+      "createdAt": "2025-11-11T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_07"
+    },
+    {
+      "id": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "name": "Boundary Strip",
+      "code": "FLD-KI-08",
+      "areaHa": 52.9,
+      "boundary": [
+        [
+          36.181021,
+          -0.199061
+        ],
+        [
+          36.188544,
+          -0.198969
+        ],
+        [
+          36.188429,
+          -0.193407
+        ],
+        [
+          36.180686,
+          -0.193365
+        ]
+      ],
+      "centroid": [
+        36.184654,
+        -0.196187
+      ],
+      "status": "attention",
+      "irrigation": "Drip",
+      "soil": "Clay loam",
+      "createdAt": "2025-11-18T08:00:00.000Z",
+      "cropCycleId": "cyc_kilima_08"
+    },
+    {
+      "id": "fld_nyota_01",
+      "farmId": "farm_nyota",
+      "name": "Nyota North",
+      "code": "FLD-NY-01",
+      "areaHa": 44.8,
+      "boundary": [
+        [
+          35.82206,
+          -1.056251
+        ],
+        [
+          35.828838,
+          -1.05642
+        ],
+        [
+          35.828662,
+          -1.050959
+        ],
+        [
+          35.821907,
+          -1.050948
+        ]
+      ],
+      "centroid": [
+        35.825383,
+        -1.053646
+      ],
+      "status": "healthy",
+      "irrigation": "Pivot",
+      "soil": "Sandy loam",
+      "createdAt": "2025-09-30T08:00:00.000Z",
+      "cropCycleId": "cyc_nyota_01"
+    },
+    {
+      "id": "fld_nyota_02",
+      "farmId": "farm_nyota",
+      "name": "Nyota South",
+      "code": "FLD-NY-02",
+      "areaHa": 47.7,
+      "boundary": [
+        [
+          35.831157,
+          -1.056477
+        ],
+        [
+          35.83811,
+          -1.056342
+        ],
+        [
+          35.838191,
+          -1.050941
+        ],
+        [
+          35.831068,
+          -1.050863
+        ]
+      ],
+      "centroid": [
+        35.834609,
+        -1.053645
+      ],
+      "status": "healthy",
+      "irrigation": "Drip",
+      "soil": "Sandy loam",
+      "createdAt": "2025-10-07T08:00:00.000Z",
+      "cropCycleId": "cyc_nyota_02"
+    },
+    {
+      "id": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "name": "Windmill Block",
+      "code": "FLD-NY-03",
+      "areaHa": 47.4,
+      "boundary": [
+        [
+          35.821854,
+          -1.049204
+        ],
+        [
+          35.8289,
+          -1.049176
+        ],
+        [
+          35.828833,
+          -1.043624
+        ],
+        [
+          35.821913,
+          -1.043727
+        ]
+      ],
+      "centroid": [
+        35.825383,
+        -1.046441
+      ],
+      "status": "critical",
+      "irrigation": "Rain-fed",
+      "soil": "Sandy loam",
+      "createdAt": "2025-10-14T08:00:00.000Z",
+      "cropCycleId": "cyc_nyota_03"
+    },
+    {
+      "id": "fld_nyota_04",
+      "farmId": "farm_nyota",
+      "name": "Olkeri Plot",
+      "code": "FLD-NY-04",
+      "areaHa": 31.6,
+      "boundary": [
+        [
+          35.83173,
+          -1.048423
+        ],
+        [
+          35.837517,
+          -1.048632
+        ],
+        [
+          35.837418,
+          -1.043962
+        ],
+        [
+          35.831808,
+          -1.044085
+        ]
+      ],
+      "centroid": [
+        35.834653,
+        -1.046287
+      ],
+      "status": "review",
+      "irrigation": "Pivot",
+      "soil": "Sandy loam",
+      "createdAt": "2025-10-21T08:00:00.000Z",
+      "cropCycleId": "cyc_nyota_04"
+    },
+    {
+      "id": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "name": "Baraka Home",
+      "code": "FLD-BA-01",
+      "areaHa": 40.2,
+      "boundary": [
+        [
+          35.09212,
+          0.594035
+        ],
+        [
+          35.098732,
+          0.59406
+        ],
+        [
+          35.0987,
+          0.598937
+        ],
+        [
+          35.092016,
+          0.598983
+        ]
+      ],
+      "centroid": [
+        35.095384,
+        0.596508
+      ],
+      "status": "critical",
+      "irrigation": "Pivot",
+      "soil": "Volcanic loam",
+      "createdAt": "2025-09-30T08:00:00.000Z",
+      "cropCycleId": "cyc_baraka_01"
+    },
+    {
+      "id": "fld_baraka_02",
+      "farmId": "farm_baraka",
+      "name": "Baraka West",
+      "code": "FLD-BA-02",
+      "areaHa": 28.9,
+      "boundary": [
+        [
+          35.101748,
+          0.594307
+        ],
+        [
+          35.107373,
+          0.594542
+        ],
+        [
+          35.107301,
+          0.598756
+        ],
+        [
+          35.101739,
+          0.598483
+        ]
+      ],
+      "centroid": [
+        35.104545,
+        0.596518
+      ],
+      "status": "review",
+      "irrigation": "Drip",
+      "soil": "Volcanic loam",
+      "createdAt": "2025-10-07T08:00:00.000Z",
+      "cropCycleId": "cyc_baraka_02"
+    },
+    {
+      "id": "fld_baraka_03",
+      "farmId": "farm_baraka",
+      "name": "Sugut Block",
+      "code": "FLD-BA-03",
+      "areaHa": 32.4,
+      "boundary": [
+        [
+          35.092348,
+          0.601384
+        ],
+        [
+          35.098405,
+          0.601326
+        ],
+        [
+          35.098523,
+          0.605579
+        ],
+        [
+          35.092373,
+          0.605747
+        ]
+      ],
+      "centroid": [
+        35.0954,
+        0.603515
+      ],
+      "status": "healthy",
+      "irrigation": "Rain-fed",
+      "soil": "Volcanic loam",
+      "createdAt": "2025-10-14T08:00:00.000Z",
+      "cropCycleId": "cyc_baraka_03"
+    },
+    {
+      "id": "fld_baraka_04",
+      "farmId": "farm_baraka",
+      "name": "Kapsoya Plot",
+      "code": "FLD-BA-04",
+      "areaHa": 49.3,
+      "boundary": [
+        [
+          35.100762,
+          0.600722
+        ],
+        [
+          35.10807,
+          0.600689
+        ],
+        [
+          35.108322,
+          0.605973
+        ],
+        [
+          35.100849,
+          0.606273
+        ]
+      ],
+      "centroid": [
+        35.104471,
+        0.603426
+      ],
+      "status": "unverified",
+      "irrigation": "Pivot",
+      "soil": "Volcanic loam",
+      "createdAt": "2025-10-21T08:00:00.000Z",
+      "cropCycleId": null
+    }
+  ],
+  "cropCycles": [
+    {
+      "id": "cyc_kilima_01",
+      "fieldId": "fld_kilima_01",
+      "crop": "Maize",
+      "variety": "SC Duma 43",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Vegetative (V8)",
+      "population": 57000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_02",
+      "fieldId": "fld_kilima_02",
+      "crop": "Maize",
+      "variety": "SC Duma 43",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Maturity (R6)",
+      "population": 51000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_03",
+      "fieldId": "fld_kilima_03",
+      "crop": "Maize",
+      "variety": "DH04",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Vegetative (V8)",
+      "population": 54000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_04",
+      "fieldId": "fld_kilima_04",
+      "crop": "Beans",
+      "variety": "Rosecoco",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Pod filling",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_05",
+      "fieldId": "fld_kilima_05",
+      "crop": "Maize",
+      "variety": "Pannar 53",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Vegetative (V8)",
+      "population": 54000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_06",
+      "fieldId": "fld_kilima_06",
+      "crop": "Maize",
+      "variety": "DH04",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Maturity (R6)",
+      "population": 53000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_07",
+      "fieldId": "fld_kilima_07",
+      "crop": "Maize",
+      "variety": "DH04",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Vegetative (V8)",
+      "population": 58000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_kilima_08",
+      "fieldId": "fld_kilima_08",
+      "crop": "Maize",
+      "variety": "Pannar 53",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Maturity (R6)",
+      "population": 50000,
+      "status": "active"
+    },
+    {
+      "id": "cyc_nyota_01",
+      "fieldId": "fld_nyota_01",
+      "crop": "Wheat",
+      "variety": "Kenya Eagle 10",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Tillering",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_nyota_02",
+      "fieldId": "fld_nyota_02",
+      "crop": "Wheat",
+      "variety": "Kenya Eagle 10",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Grain filling",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_nyota_03",
+      "fieldId": "fld_nyota_03",
+      "crop": "Wheat",
+      "variety": "Njoro BW II",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-03-08",
+      "growthStage": "Tillering",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_nyota_04",
+      "fieldId": "fld_nyota_04",
+      "crop": "Wheat",
+      "variety": "Kenya Eagle 10",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-12-20",
+      "growthStage": "Grain filling",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_baraka_01",
+      "fieldId": "fld_baraka_01",
+      "crop": "Potato",
+      "variety": "Unica",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-01-17",
+      "growthStage": "Vegetative",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_baraka_02",
+      "fieldId": "fld_baraka_02",
+      "crop": "Potato",
+      "variety": "Tigoni",
+      "season": "Long rains 2026",
+      "plantingDate": "2026-07-23",
+      "expectedHarvest": "2026-10-31",
+      "growthStage": "Tuber bulking",
+      "population": null,
+      "status": "active"
+    },
+    {
+      "id": "cyc_baraka_03",
+      "fieldId": "fld_baraka_03",
+      "crop": "Potato",
+      "variety": "Unica",
+      "season": "Short rains 2026",
+      "plantingDate": "2026-10-09",
+      "expectedHarvest": "2027-01-17",
+      "growthStage": "Vegetative",
+      "population": null,
+      "status": "active"
+    }
+  ],
+  "surveys": [
+    {
+      "id": "srv_001",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "name": "Acacia Block · RGB survey",
+      "capturedAt": "2026-10-29T06:20:00.000Z",
+      "uploadedAt": "2026-10-29T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 60,
+      "coverageHa": 35.1,
+      "imageCount": 404,
+      "durationMin": 15,
+      "findingsCount": 0,
+      "startedAt": "2026-10-29T10:06:00.000Z",
+      "completedAt": "2026-10-29T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_001_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-01_9062.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_001-0",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_001_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-01_1100.jpg",
+          "sizeMb": 8,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_001-1",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_001_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-01_pass.mp4",
+          "sizeMb": 751,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_001-2",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_002",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "name": "Acacia Block · Multispectral pass",
+      "capturedAt": "2026-10-17T06:20:00.000Z",
+      "uploadedAt": "2026-10-17T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "Multispectral",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 47,
+      "coverageHa": 36.9,
+      "imageCount": 340,
+      "durationMin": 10,
+      "findingsCount": 1,
+      "startedAt": "2026-10-17T10:06:00.000Z",
+      "completedAt": "2026-10-17T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_002_ast_1",
+          "kind": "orthomosaic",
+          "name": "FLD-KI-01_ortho.tif",
+          "sizeMb": 21,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_002-0",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_002_ast_2",
+          "kind": "geotiff",
+          "name": "FLD-KI-01_multispectral.tif",
+          "sizeMb": 288,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_002-1",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_002_ast_3",
+          "kind": "image",
+          "name": "FLD-KI-01_2507.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_002-2",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_002_ast_4",
+          "kind": "image",
+          "name": "FLD-KI-01_6659.jpg",
+          "sizeMb": 19,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_002-3",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_003",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "name": "Acacia Block · RGB survey",
+      "capturedAt": "2026-09-28T06:20:00.000Z",
+      "uploadedAt": "2026-09-28T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 56,
+      "coverageHa": 34.8,
+      "imageCount": 170,
+      "durationMin": 16,
+      "findingsCount": 1,
+      "startedAt": "2026-09-28T10:06:00.000Z",
+      "completedAt": "2026-09-28T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_003_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-01_6366.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_003-0",
+          "capturedAt": "2026-09-28T06:20:00.000Z"
+        },
+        {
+          "id": "srv_003_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-01_1399.jpg",
+          "sizeMb": 24,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_003-1",
+          "capturedAt": "2026-09-28T06:20:00.000Z"
+        },
+        {
+          "id": "srv_003_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-01_pass.mp4",
+          "sizeMb": 805,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_003-2",
+          "capturedAt": "2026-09-28T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_004",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "name": "North Ridge · Thermal pass",
+      "capturedAt": "2026-10-31T06:20:00.000Z",
+      "uploadedAt": "2026-10-31T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "Thermal",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 54,
+      "coverageHa": 31.6,
+      "imageCount": 341,
+      "durationMin": 17,
+      "findingsCount": 2,
+      "startedAt": "2026-10-31T10:06:00.000Z",
+      "completedAt": "2026-10-31T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_004_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-02_4629.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_004-0",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_004_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-02_6294.jpg",
+          "sizeMb": 9,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_004-1",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_004_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-02_pass.mp4",
+          "sizeMb": 800,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_004-2",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_005",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "name": "North Ridge · Multispectral pass",
+      "capturedAt": "2026-10-15T06:20:00.000Z",
+      "uploadedAt": "2026-10-15T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "Multispectral",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 50,
+      "coverageHa": 30.4,
+      "imageCount": 456,
+      "durationMin": 10,
+      "findingsCount": 1,
+      "startedAt": "2026-10-15T10:06:00.000Z",
+      "completedAt": "2026-10-15T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_005_ast_1",
+          "kind": "orthomosaic",
+          "name": "FLD-KI-02_ortho.tif",
+          "sizeMb": 20,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_005-0",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_005_ast_2",
+          "kind": "geotiff",
+          "name": "FLD-KI-02_multispectral.tif",
+          "sizeMb": 377,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_005-1",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_005_ast_3",
+          "kind": "image",
+          "name": "FLD-KI-02_3195.jpg",
+          "sizeMb": 12,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_005-2",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_005_ast_4",
+          "kind": "image",
+          "name": "FLD-KI-02_3021.jpg",
+          "sizeMb": 21,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_005-3",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_006",
+      "fieldId": "fld_kilima_03",
+      "farmId": "farm_kilima",
+      "name": "Riverside · RGB survey",
+      "capturedAt": "2026-10-30T06:20:00.000Z",
+      "uploadedAt": "2026-10-30T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 40,
+      "coverageHa": 49.3,
+      "imageCount": 396,
+      "durationMin": 11,
+      "findingsCount": 0,
+      "startedAt": "2026-10-30T10:06:00.000Z",
+      "completedAt": "2026-10-30T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_006_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-03_1376.jpg",
+          "sizeMb": 10,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_006-0",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_006_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-03_9250.jpg",
+          "sizeMb": 13,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_006-1",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_006_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-03_pass.mp4",
+          "sizeMb": 596,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_006-2",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_007",
+      "fieldId": "fld_kilima_03",
+      "farmId": "farm_kilima",
+      "name": "Riverside · Multispectral pass",
+      "capturedAt": "2026-10-11T06:20:00.000Z",
+      "uploadedAt": "2026-10-11T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "Multispectral",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 44,
+      "coverageHa": 47.4,
+      "imageCount": 290,
+      "durationMin": 17,
+      "findingsCount": 0,
+      "startedAt": "2026-10-11T10:06:00.000Z",
+      "completedAt": "2026-10-11T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_007_ast_1",
+          "kind": "orthomosaic",
+          "name": "FLD-KI-03_ortho.tif",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_007-0",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_007_ast_2",
+          "kind": "geotiff",
+          "name": "FLD-KI-03_multispectral.tif",
+          "sizeMb": 417,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_007-1",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_007_ast_3",
+          "kind": "image",
+          "name": "FLD-KI-03_2772.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_007-2",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_007_ast_4",
+          "kind": "image",
+          "name": "FLD-KI-03_5668.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_007-3",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_008",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "name": "Kilima East · RGB survey",
+      "capturedAt": "2026-11-01T06:20:00.000Z",
+      "uploadedAt": "2026-11-01T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 54,
+      "coverageHa": 32.1,
+      "imageCount": 358,
+      "durationMin": 14,
+      "findingsCount": 0,
+      "startedAt": "2026-11-01T10:06:00.000Z",
+      "completedAt": "2026-11-01T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_008_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-04_4204.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_008-0",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        },
+        {
+          "id": "srv_008_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-04_9695.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_008-1",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        },
+        {
+          "id": "srv_008_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-04_pass.mp4",
+          "sizeMb": 638,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_008-2",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_009",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "name": "Kilima East · Multispectral pass",
+      "capturedAt": "2026-10-15T06:20:00.000Z",
+      "uploadedAt": "2026-10-15T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "Multispectral",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 48,
+      "coverageHa": 33.1,
+      "imageCount": 304,
+      "durationMin": 23,
+      "findingsCount": 1,
+      "startedAt": "2026-10-15T10:06:00.000Z",
+      "completedAt": "2026-10-15T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_009_ast_1",
+          "kind": "orthomosaic",
+          "name": "FLD-KI-04_ortho.tif",
+          "sizeMb": 26,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_009-0",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_009_ast_2",
+          "kind": "geotiff",
+          "name": "FLD-KI-04_multispectral.tif",
+          "sizeMb": 414,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_009-1",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_009_ast_3",
+          "kind": "image",
+          "name": "FLD-KI-04_8838.jpg",
+          "sizeMb": 16,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_009-2",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_009_ast_4",
+          "kind": "image",
+          "name": "FLD-KI-04_9000.jpg",
+          "sizeMb": 14,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_009-3",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_010",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "name": "Kilima East · RGB survey",
+      "capturedAt": "2026-09-22T06:20:00.000Z",
+      "uploadedAt": "2026-09-22T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 50,
+      "coverageHa": 28.9,
+      "imageCount": 356,
+      "durationMin": 13,
+      "findingsCount": 1,
+      "startedAt": "2026-09-22T10:06:00.000Z",
+      "completedAt": "2026-09-22T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_010_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-04_9226.jpg",
+          "sizeMb": 17,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_010-0",
+          "capturedAt": "2026-09-22T06:20:00.000Z"
+        },
+        {
+          "id": "srv_010_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-04_5640.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_010-1",
+          "capturedAt": "2026-09-22T06:20:00.000Z"
+        },
+        {
+          "id": "srv_010_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-04_pass.mp4",
+          "sizeMb": 647,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_010-2",
+          "capturedAt": "2026-09-22T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_011",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "name": "Mlima Plot · RGB survey",
+      "capturedAt": "2026-10-30T06:20:00.000Z",
+      "uploadedAt": "2026-10-30T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 62,
+      "coverageHa": 48.9,
+      "imageCount": 456,
+      "durationMin": 15,
+      "findingsCount": 1,
+      "startedAt": "2026-10-30T10:06:00.000Z",
+      "completedAt": "2026-10-30T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_011_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-05_5892.jpg",
+          "sizeMb": 21,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_011-0",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_011_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-05_9947.jpg",
+          "sizeMb": 21,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_011-1",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_011_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-05_pass.mp4",
+          "sizeMb": 653,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_011-2",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_012",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "name": "Mlima Plot · RGB survey",
+      "capturedAt": "2026-10-17T06:20:00.000Z",
+      "uploadedAt": "2026-10-17T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 52,
+      "coverageHa": 48,
+      "imageCount": 101,
+      "durationMin": 9,
+      "findingsCount": 2,
+      "startedAt": "2026-10-17T10:06:00.000Z",
+      "completedAt": "2026-10-17T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_012_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-05_4130.jpg",
+          "sizeMb": 25,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_012-0",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_012_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-05_7421.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_012-1",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_012_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-05_pass.mp4",
+          "sizeMb": 468,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_012-2",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_013",
+      "fieldId": "fld_kilima_06",
+      "farmId": "farm_kilima",
+      "name": "Dam Field · RGB survey",
+      "capturedAt": "2026-10-29T06:20:00.000Z",
+      "uploadedAt": "2026-10-29T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 56,
+      "coverageHa": 34.6,
+      "imageCount": 366,
+      "durationMin": 21,
+      "findingsCount": 0,
+      "startedAt": "2026-10-29T10:06:00.000Z",
+      "completedAt": "2026-10-29T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_013_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-06_3794.jpg",
+          "sizeMb": 19,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_013-0",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_013_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-06_7800.jpg",
+          "sizeMb": 10,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_013-1",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_013_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-06_pass.mp4",
+          "sizeMb": 817,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_013-2",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_014",
+      "fieldId": "fld_kilima_06",
+      "farmId": "farm_kilima",
+      "name": "Dam Field · RGB survey",
+      "capturedAt": "2026-10-15T06:20:00.000Z",
+      "uploadedAt": "2026-10-15T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 55,
+      "coverageHa": 36.5,
+      "imageCount": 336,
+      "durationMin": 23,
+      "findingsCount": 0,
+      "startedAt": "2026-10-15T10:06:00.000Z",
+      "completedAt": "2026-10-15T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_014_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-06_2563.jpg",
+          "sizeMb": 14,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_014-0",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_014_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-06_2122.jpg",
+          "sizeMb": 25,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_014-1",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_014_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-06_pass.mp4",
+          "sizeMb": 548,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_014-2",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_015",
+      "fieldId": "fld_kilima_07",
+      "farmId": "farm_kilima",
+      "name": "School Block · RGB survey",
+      "capturedAt": "2026-10-31T06:20:00.000Z",
+      "uploadedAt": "2026-10-31T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "processing",
+      "progress": 64,
+      "hasGeo": true,
+      "altitudeM": 55,
+      "coverageHa": 45.5,
+      "imageCount": 411,
+      "durationMin": 24,
+      "findingsCount": 0,
+      "startedAt": "2026-10-31T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_015_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-07_7392.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_015-0",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_015_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-07_1450.jpg",
+          "sizeMb": 25,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_015-1",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_015_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-07_pass.mp4",
+          "sizeMb": 642,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_015-2",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_016",
+      "fieldId": "fld_kilima_07",
+      "farmId": "farm_kilima",
+      "name": "School Block · RGB survey",
+      "capturedAt": "2026-10-17T06:20:00.000Z",
+      "uploadedAt": "2026-10-17T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "queued",
+      "progress": 0,
+      "hasGeo": true,
+      "altitudeM": 40,
+      "coverageHa": 47.4,
+      "imageCount": 193,
+      "durationMin": 23,
+      "findingsCount": 0,
+      "startedAt": "2026-10-17T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_016_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-07_4700.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_016-0",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_016_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-07_1260.jpg",
+          "sizeMb": 8,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_016-1",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_016_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-07_pass.mp4",
+          "sizeMb": 566,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_016-2",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_017",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "name": "Boundary Strip · RGB survey",
+      "capturedAt": "2026-10-31T06:20:00.000Z",
+      "uploadedAt": "2026-10-31T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 51,
+      "coverageHa": 50.1,
+      "imageCount": 226,
+      "durationMin": 11,
+      "findingsCount": 2,
+      "startedAt": "2026-10-31T10:06:00.000Z",
+      "completedAt": "2026-10-31T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_017_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-08_6526.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_017-0",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_017_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-08_6436.jpg",
+          "sizeMb": 10,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_017-1",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_017_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-08_pass.mp4",
+          "sizeMb": 751,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_017-2",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_018",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "name": "Boundary Strip · RGB survey",
+      "capturedAt": "2026-10-11T06:20:00.000Z",
+      "uploadedAt": "2026-10-11T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 57,
+      "coverageHa": 48.3,
+      "imageCount": 437,
+      "durationMin": 20,
+      "findingsCount": 1,
+      "startedAt": "2026-10-11T10:06:00.000Z",
+      "completedAt": "2026-10-11T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_018_ast_1",
+          "kind": "image",
+          "name": "FLD-KI-08_6287.jpg",
+          "sizeMb": 13,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_018-0",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_018_ast_2",
+          "kind": "image",
+          "name": "FLD-KI-08_9149.jpg",
+          "sizeMb": 23,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_018-1",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_018_ast_3",
+          "kind": "video",
+          "name": "FLD-KI-08_pass.mp4",
+          "sizeMb": 868,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_018-2",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_019",
+      "fieldId": "fld_nyota_01",
+      "farmId": "farm_nyota",
+      "name": "Nyota North · RGB survey",
+      "capturedAt": "2026-11-02T06:20:00.000Z",
+      "uploadedAt": "2026-11-02T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "validating",
+      "progress": 22,
+      "hasGeo": true,
+      "altitudeM": 38,
+      "coverageHa": 39.1,
+      "imageCount": 92,
+      "durationMin": 16,
+      "findingsCount": 0,
+      "startedAt": "2026-11-02T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_019_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-01_4117.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_019-0",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        },
+        {
+          "id": "srv_019_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-01_8530.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_019-1",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        },
+        {
+          "id": "srv_019_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-01_pass.mp4",
+          "sizeMb": 822,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_019-2",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_020",
+      "fieldId": "fld_nyota_01",
+      "farmId": "farm_nyota",
+      "name": "Nyota North · RGB survey",
+      "capturedAt": "2026-10-15T06:20:00.000Z",
+      "uploadedAt": "2026-10-15T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 57,
+      "coverageHa": 37.9,
+      "imageCount": 193,
+      "durationMin": 18,
+      "findingsCount": 0,
+      "startedAt": "2026-10-15T10:06:00.000Z",
+      "completedAt": "2026-10-15T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_020_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-01_3127.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_020-0",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_020_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-01_3760.jpg",
+          "sizeMb": 13,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_020-1",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        },
+        {
+          "id": "srv_020_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-01_pass.mp4",
+          "sizeMb": 871,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_020-2",
+          "capturedAt": "2026-10-15T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_021",
+      "fieldId": "fld_nyota_01",
+      "farmId": "farm_nyota",
+      "name": "Nyota North · RGB survey",
+      "capturedAt": "2026-09-29T06:20:00.000Z",
+      "uploadedAt": "2026-09-29T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 55,
+      "coverageHa": 40.1,
+      "imageCount": 218,
+      "durationMin": 12,
+      "findingsCount": 0,
+      "startedAt": "2026-09-29T10:06:00.000Z",
+      "completedAt": "2026-09-29T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_021_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-01_7214.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_021-0",
+          "capturedAt": "2026-09-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_021_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-01_6163.jpg",
+          "sizeMb": 26,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_021-1",
+          "capturedAt": "2026-09-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_021_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-01_pass.mp4",
+          "sizeMb": 899,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_021-2",
+          "capturedAt": "2026-09-29T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_022",
+      "fieldId": "fld_nyota_02",
+      "farmId": "farm_nyota",
+      "name": "Nyota South · RGB survey",
+      "capturedAt": "2026-10-31T06:20:00.000Z",
+      "uploadedAt": "2026-10-31T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "queued",
+      "progress": 0,
+      "hasGeo": true,
+      "altitudeM": 58,
+      "coverageHa": 42.4,
+      "imageCount": 231,
+      "durationMin": 10,
+      "findingsCount": 0,
+      "startedAt": "2026-10-31T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_022_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-02_3758.jpg",
+          "sizeMb": 19,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_022-0",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_022_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-02_4030.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_022-1",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        },
+        {
+          "id": "srv_022_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-02_pass.mp4",
+          "sizeMb": 528,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_022-2",
+          "capturedAt": "2026-10-31T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_023",
+      "fieldId": "fld_nyota_02",
+      "farmId": "farm_nyota",
+      "name": "Nyota South · RGB survey",
+      "capturedAt": "2026-10-17T06:20:00.000Z",
+      "uploadedAt": "2026-10-17T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 58,
+      "coverageHa": 45.6,
+      "imageCount": 151,
+      "durationMin": 24,
+      "findingsCount": 0,
+      "startedAt": "2026-10-17T10:06:00.000Z",
+      "completedAt": "2026-10-17T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_023_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-02_9281.jpg",
+          "sizeMb": 22,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_023-0",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_023_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-02_8184.jpg",
+          "sizeMb": 14,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_023-1",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_023_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-02_pass.mp4",
+          "sizeMb": 429,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_023-2",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_024",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "name": "Windmill Block · RGB survey",
+      "capturedAt": "2026-10-30T06:20:00.000Z",
+      "uploadedAt": "2026-10-30T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 52,
+      "coverageHa": 44.4,
+      "imageCount": 383,
+      "durationMin": 18,
+      "findingsCount": 2,
+      "startedAt": "2026-10-30T10:06:00.000Z",
+      "completedAt": "2026-10-30T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_024_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-03_8616.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_024-0",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_024_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-03_4647.jpg",
+          "sizeMb": 16,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_024-1",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        },
+        {
+          "id": "srv_024_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-03_pass.mp4",
+          "sizeMb": 440,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_024-2",
+          "capturedAt": "2026-10-30T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_025",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "name": "Windmill Block · RGB survey",
+      "capturedAt": "2026-10-11T06:20:00.000Z",
+      "uploadedAt": "2026-10-11T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 55,
+      "coverageHa": 41.8,
+      "imageCount": 132,
+      "durationMin": 13,
+      "findingsCount": 1,
+      "startedAt": "2026-10-11T10:06:00.000Z",
+      "completedAt": "2026-10-11T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_025_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-03_9732.jpg",
+          "sizeMb": 17,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_025-0",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_025_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-03_8925.jpg",
+          "sizeMb": 14,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_025-1",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_025_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-03_pass.mp4",
+          "sizeMb": 596,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_025-2",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_026",
+      "fieldId": "fld_nyota_04",
+      "farmId": "farm_nyota",
+      "name": "Olkeri Plot · RGB survey",
+      "capturedAt": "2026-10-29T06:20:00.000Z",
+      "uploadedAt": "2026-10-29T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": false,
+      "altitudeM": 39,
+      "coverageHa": 26.6,
+      "imageCount": 275,
+      "durationMin": 13,
+      "findingsCount": 1,
+      "startedAt": "2026-10-29T10:06:00.000Z",
+      "completedAt": "2026-10-29T10:40:00.000Z",
+      "failureReason": null,
+      "notes": "Video-only upload. Observations are not mapped to field coordinates.",
+      "assets": [
+        {
+          "id": "srv_026_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-04_3551.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_026-0",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_026_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-04_8667.jpg",
+          "sizeMb": 25,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_026-1",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_026_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-04_pass.mp4",
+          "sizeMb": 509,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_026-2",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_027",
+      "fieldId": "fld_nyota_04",
+      "farmId": "farm_nyota",
+      "name": "Olkeri Plot · RGB survey",
+      "capturedAt": "2026-10-12T06:20:00.000Z",
+      "uploadedAt": "2026-10-12T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": false,
+      "altitudeM": 38,
+      "coverageHa": 27.1,
+      "imageCount": 379,
+      "durationMin": 22,
+      "findingsCount": 0,
+      "startedAt": "2026-10-12T10:06:00.000Z",
+      "completedAt": "2026-10-12T10:40:00.000Z",
+      "failureReason": null,
+      "notes": "Video-only upload. Observations are not mapped to field coordinates.",
+      "assets": [
+        {
+          "id": "srv_027_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-04_7762.jpg",
+          "sizeMb": 13,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_027-0",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        },
+        {
+          "id": "srv_027_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-04_7452.jpg",
+          "sizeMb": 17,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_027-1",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        },
+        {
+          "id": "srv_027_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-04_pass.mp4",
+          "sizeMb": 860,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_027-2",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_028",
+      "fieldId": "fld_nyota_04",
+      "farmId": "farm_nyota",
+      "name": "Olkeri Plot · RGB survey",
+      "capturedAt": "2026-09-26T06:20:00.000Z",
+      "uploadedAt": "2026-09-26T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": false,
+      "altitudeM": 41,
+      "coverageHa": 26.6,
+      "imageCount": 318,
+      "durationMin": 18,
+      "findingsCount": 0,
+      "startedAt": "2026-09-26T10:06:00.000Z",
+      "completedAt": "2026-09-26T10:40:00.000Z",
+      "failureReason": null,
+      "notes": "Video-only upload. Observations are not mapped to field coordinates.",
+      "assets": [
+        {
+          "id": "srv_028_ast_1",
+          "kind": "image",
+          "name": "FLD-NY-04_2597.jpg",
+          "sizeMb": 21,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_028-0",
+          "capturedAt": "2026-09-26T06:20:00.000Z"
+        },
+        {
+          "id": "srv_028_ast_2",
+          "kind": "image",
+          "name": "FLD-NY-04_6872.jpg",
+          "sizeMb": 19,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_028-1",
+          "capturedAt": "2026-09-26T06:20:00.000Z"
+        },
+        {
+          "id": "srv_028_ast_3",
+          "kind": "video",
+          "name": "FLD-NY-04_pass.mp4",
+          "sizeMb": 784,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_028-2",
+          "capturedAt": "2026-09-26T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_029",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "name": "Baraka Home · RGB survey",
+      "capturedAt": "2026-11-01T06:20:00.000Z",
+      "uploadedAt": "2026-11-01T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 57,
+      "coverageHa": 37.8,
+      "imageCount": 266,
+      "durationMin": 17,
+      "findingsCount": 0,
+      "startedAt": "2026-11-01T10:06:00.000Z",
+      "completedAt": "2026-11-01T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_029_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-01_2699.jpg",
+          "sizeMb": 17,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_029-0",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        },
+        {
+          "id": "srv_029_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-01_4813.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_029-1",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        },
+        {
+          "id": "srv_029_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-01_pass.mp4",
+          "sizeMb": 974,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_029-2",
+          "capturedAt": "2026-11-01T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_030",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "name": "Baraka Home · RGB survey",
+      "capturedAt": "2026-10-12T06:20:00.000Z",
+      "uploadedAt": "2026-10-12T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 48,
+      "coverageHa": 35.7,
+      "imageCount": 326,
+      "durationMin": 11,
+      "findingsCount": 1,
+      "startedAt": "2026-10-12T10:06:00.000Z",
+      "completedAt": "2026-10-12T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_030_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-01_6753.jpg",
+          "sizeMb": 8,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_030-0",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        },
+        {
+          "id": "srv_030_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-01_2014.jpg",
+          "sizeMb": 12,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_030-1",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        },
+        {
+          "id": "srv_030_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-01_pass.mp4",
+          "sizeMb": 756,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_030-2",
+          "capturedAt": "2026-10-12T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_031",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "name": "Baraka Home · RGB survey",
+      "capturedAt": "2026-09-23T06:20:00.000Z",
+      "uploadedAt": "2026-09-23T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 54,
+      "coverageHa": 36.6,
+      "imageCount": 235,
+      "durationMin": 17,
+      "findingsCount": 1,
+      "startedAt": "2026-09-23T10:06:00.000Z",
+      "completedAt": "2026-09-23T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_031_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-01_2544.jpg",
+          "sizeMb": 11,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_031-0",
+          "capturedAt": "2026-09-23T06:20:00.000Z"
+        },
+        {
+          "id": "srv_031_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-01_3749.jpg",
+          "sizeMb": 8,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_031-1",
+          "capturedAt": "2026-09-23T06:20:00.000Z"
+        },
+        {
+          "id": "srv_031_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-01_pass.mp4",
+          "sizeMb": 593,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_031-2",
+          "capturedAt": "2026-09-23T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_032",
+      "fieldId": "fld_baraka_02",
+      "farmId": "farm_baraka",
+      "name": "Baraka West · RGB survey",
+      "capturedAt": "2026-10-29T06:20:00.000Z",
+      "uploadedAt": "2026-10-29T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "failed",
+      "progress": 41,
+      "hasGeo": true,
+      "altitudeM": 53,
+      "coverageHa": 24.6,
+      "imageCount": 352,
+      "durationMin": 10,
+      "findingsCount": 0,
+      "startedAt": "2026-10-29T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": "GeoTIFF could not be georeferenced: the file is missing a coordinate reference system.",
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_032_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-02_9311.jpg",
+          "sizeMb": 8,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_032-0",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_032_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-02_9080.jpg",
+          "sizeMb": 18,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_032-1",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_032_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-02_pass.mp4",
+          "sizeMb": 594,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_032-2",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_033",
+      "fieldId": "fld_baraka_02",
+      "farmId": "farm_baraka",
+      "name": "Baraka West · RGB survey",
+      "capturedAt": "2026-10-17T06:20:00.000Z",
+      "uploadedAt": "2026-10-17T10:05:00.000Z",
+      "pilot": "Peter Mwangi",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": true,
+      "altitudeM": 55,
+      "coverageHa": 27.7,
+      "imageCount": 155,
+      "durationMin": 14,
+      "findingsCount": 2,
+      "startedAt": "2026-10-17T10:06:00.000Z",
+      "completedAt": "2026-10-17T10:40:00.000Z",
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_033_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-02_4159.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_033-0",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_033_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-02_9417.jpg",
+          "sizeMb": 17,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_033-1",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        },
+        {
+          "id": "srv_033_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-02_pass.mp4",
+          "sizeMb": 557,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_033-2",
+          "capturedAt": "2026-10-17T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_034",
+      "fieldId": "fld_baraka_03",
+      "farmId": "farm_baraka",
+      "name": "Sugut Block · RGB survey",
+      "capturedAt": "2026-11-02T06:20:00.000Z",
+      "uploadedAt": "2026-11-02T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": false,
+      "altitudeM": 45,
+      "coverageHa": 28.5,
+      "imageCount": 279,
+      "durationMin": 24,
+      "findingsCount": 0,
+      "startedAt": "2026-11-02T10:06:00.000Z",
+      "completedAt": "2026-11-02T10:40:00.000Z",
+      "failureReason": null,
+      "notes": "Video-only upload. Observations are not mapped to field coordinates.",
+      "assets": [
+        {
+          "id": "srv_034_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-03_7174.jpg",
+          "sizeMb": 24,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_034-0",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        },
+        {
+          "id": "srv_034_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-03_7701.jpg",
+          "sizeMb": 9,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_034-1",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        },
+        {
+          "id": "srv_034_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-03_pass.mp4",
+          "sizeMb": 506,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_034-2",
+          "capturedAt": "2026-11-02T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_035",
+      "fieldId": "fld_baraka_03",
+      "farmId": "farm_baraka",
+      "name": "Sugut Block · RGB survey",
+      "capturedAt": "2026-10-11T06:20:00.000Z",
+      "uploadedAt": "2026-10-11T10:05:00.000Z",
+      "pilot": "Samuel Kiptoo",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "completed",
+      "progress": 100,
+      "hasGeo": false,
+      "altitudeM": 49,
+      "coverageHa": 31.2,
+      "imageCount": 326,
+      "durationMin": 21,
+      "findingsCount": 0,
+      "startedAt": "2026-10-11T10:06:00.000Z",
+      "completedAt": "2026-10-11T10:40:00.000Z",
+      "failureReason": null,
+      "notes": "Video-only upload. Observations are not mapped to field coordinates.",
+      "assets": [
+        {
+          "id": "srv_035_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-03_1226.jpg",
+          "sizeMb": 25,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_035-0",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_035_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-03_1217.jpg",
+          "sizeMb": 15,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_035-1",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        },
+        {
+          "id": "srv_035_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-03_pass.mp4",
+          "sizeMb": 706,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_035-2",
+          "capturedAt": "2026-10-11T06:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "srv_036",
+      "fieldId": "fld_baraka_04",
+      "farmId": "farm_baraka",
+      "name": "Kapsoya Plot · RGB survey",
+      "capturedAt": "2026-10-29T06:20:00.000Z",
+      "uploadedAt": "2026-10-29T10:05:00.000Z",
+      "pilot": "Faith Achieng",
+      "platform": "DJI Mavic 3M",
+      "sensor": "RGB",
+      "status": "validating",
+      "progress": 22,
+      "hasGeo": true,
+      "altitudeM": 56,
+      "coverageHa": 42.3,
+      "imageCount": 156,
+      "durationMin": 22,
+      "findingsCount": 0,
+      "startedAt": "2026-10-29T10:06:00.000Z",
+      "completedAt": null,
+      "failureReason": null,
+      "notes": null,
+      "assets": [
+        {
+          "id": "srv_036_ast_1",
+          "kind": "image",
+          "name": "FLD-BA-04_7339.jpg",
+          "sizeMb": 13,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_036-0",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_036_ast_2",
+          "kind": "image",
+          "name": "FLD-BA-04_2808.jpg",
+          "sizeMb": 14,
+          "width": 5280,
+          "height": 3956,
+          "seed": "srv_036-1",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        },
+        {
+          "id": "srv_036_ast_3",
+          "kind": "video",
+          "name": "FLD-BA-04_pass.mp4",
+          "sizeMb": 810,
+          "width": 3840,
+          "height": 2160,
+          "seed": "srv_036-2",
+          "capturedAt": "2026-10-29T06:20:00.000Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "srv_001_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-01_9062.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_001-0",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_001_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-01_1100.jpg",
+      "sizeMb": 8,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_001-1",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_001_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-01_pass.mp4",
+      "sizeMb": 751,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_001-2",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_002_ast_1",
+      "kind": "orthomosaic",
+      "name": "FLD-KI-01_ortho.tif",
+      "sizeMb": 21,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_002-0",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_002_ast_2",
+      "kind": "geotiff",
+      "name": "FLD-KI-01_multispectral.tif",
+      "sizeMb": 288,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_002-1",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_002_ast_3",
+      "kind": "image",
+      "name": "FLD-KI-01_2507.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_002-2",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_002_ast_4",
+      "kind": "image",
+      "name": "FLD-KI-01_6659.jpg",
+      "sizeMb": 19,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_002-3",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_003_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-01_6366.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_003-0",
+      "capturedAt": "2026-09-28T06:20:00.000Z"
+    },
+    {
+      "id": "srv_003_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-01_1399.jpg",
+      "sizeMb": 24,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_003-1",
+      "capturedAt": "2026-09-28T06:20:00.000Z"
+    },
+    {
+      "id": "srv_003_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-01_pass.mp4",
+      "sizeMb": 805,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_003-2",
+      "capturedAt": "2026-09-28T06:20:00.000Z"
+    },
+    {
+      "id": "srv_004_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-02_4629.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_004-0",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_004_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-02_6294.jpg",
+      "sizeMb": 9,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_004-1",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_004_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-02_pass.mp4",
+      "sizeMb": 800,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_004-2",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_005_ast_1",
+      "kind": "orthomosaic",
+      "name": "FLD-KI-02_ortho.tif",
+      "sizeMb": 20,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_005-0",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_005_ast_2",
+      "kind": "geotiff",
+      "name": "FLD-KI-02_multispectral.tif",
+      "sizeMb": 377,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_005-1",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_005_ast_3",
+      "kind": "image",
+      "name": "FLD-KI-02_3195.jpg",
+      "sizeMb": 12,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_005-2",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_005_ast_4",
+      "kind": "image",
+      "name": "FLD-KI-02_3021.jpg",
+      "sizeMb": 21,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_005-3",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_006_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-03_1376.jpg",
+      "sizeMb": 10,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_006-0",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_006_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-03_9250.jpg",
+      "sizeMb": 13,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_006-1",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_006_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-03_pass.mp4",
+      "sizeMb": 596,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_006-2",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_007_ast_1",
+      "kind": "orthomosaic",
+      "name": "FLD-KI-03_ortho.tif",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_007-0",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_007_ast_2",
+      "kind": "geotiff",
+      "name": "FLD-KI-03_multispectral.tif",
+      "sizeMb": 417,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_007-1",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_007_ast_3",
+      "kind": "image",
+      "name": "FLD-KI-03_2772.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_007-2",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_007_ast_4",
+      "kind": "image",
+      "name": "FLD-KI-03_5668.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_007-3",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_008_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-04_4204.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_008-0",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_008_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-04_9695.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_008-1",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_008_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-04_pass.mp4",
+      "sizeMb": 638,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_008-2",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_009_ast_1",
+      "kind": "orthomosaic",
+      "name": "FLD-KI-04_ortho.tif",
+      "sizeMb": 26,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_009-0",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_009_ast_2",
+      "kind": "geotiff",
+      "name": "FLD-KI-04_multispectral.tif",
+      "sizeMb": 414,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_009-1",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_009_ast_3",
+      "kind": "image",
+      "name": "FLD-KI-04_8838.jpg",
+      "sizeMb": 16,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_009-2",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_009_ast_4",
+      "kind": "image",
+      "name": "FLD-KI-04_9000.jpg",
+      "sizeMb": 14,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_009-3",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_010_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-04_9226.jpg",
+      "sizeMb": 17,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_010-0",
+      "capturedAt": "2026-09-22T06:20:00.000Z"
+    },
+    {
+      "id": "srv_010_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-04_5640.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_010-1",
+      "capturedAt": "2026-09-22T06:20:00.000Z"
+    },
+    {
+      "id": "srv_010_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-04_pass.mp4",
+      "sizeMb": 647,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_010-2",
+      "capturedAt": "2026-09-22T06:20:00.000Z"
+    },
+    {
+      "id": "srv_011_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-05_5892.jpg",
+      "sizeMb": 21,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_011-0",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_011_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-05_9947.jpg",
+      "sizeMb": 21,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_011-1",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_011_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-05_pass.mp4",
+      "sizeMb": 653,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_011-2",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_012_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-05_4130.jpg",
+      "sizeMb": 25,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_012-0",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_012_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-05_7421.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_012-1",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_012_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-05_pass.mp4",
+      "sizeMb": 468,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_012-2",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_013_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-06_3794.jpg",
+      "sizeMb": 19,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_013-0",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_013_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-06_7800.jpg",
+      "sizeMb": 10,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_013-1",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_013_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-06_pass.mp4",
+      "sizeMb": 817,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_013-2",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_014_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-06_2563.jpg",
+      "sizeMb": 14,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_014-0",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_014_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-06_2122.jpg",
+      "sizeMb": 25,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_014-1",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_014_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-06_pass.mp4",
+      "sizeMb": 548,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_014-2",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_015_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-07_7392.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_015-0",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_015_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-07_1450.jpg",
+      "sizeMb": 25,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_015-1",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_015_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-07_pass.mp4",
+      "sizeMb": 642,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_015-2",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_016_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-07_4700.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_016-0",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_016_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-07_1260.jpg",
+      "sizeMb": 8,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_016-1",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_016_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-07_pass.mp4",
+      "sizeMb": 566,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_016-2",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_017_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-08_6526.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_017-0",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_017_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-08_6436.jpg",
+      "sizeMb": 10,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_017-1",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_017_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-08_pass.mp4",
+      "sizeMb": 751,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_017-2",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_018_ast_1",
+      "kind": "image",
+      "name": "FLD-KI-08_6287.jpg",
+      "sizeMb": 13,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_018-0",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_018_ast_2",
+      "kind": "image",
+      "name": "FLD-KI-08_9149.jpg",
+      "sizeMb": 23,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_018-1",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_018_ast_3",
+      "kind": "video",
+      "name": "FLD-KI-08_pass.mp4",
+      "sizeMb": 868,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_018-2",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_019_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-01_4117.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_019-0",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_019_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-01_8530.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_019-1",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_019_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-01_pass.mp4",
+      "sizeMb": 822,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_019-2",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_020_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-01_3127.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_020-0",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_020_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-01_3760.jpg",
+      "sizeMb": 13,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_020-1",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_020_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-01_pass.mp4",
+      "sizeMb": 871,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_020-2",
+      "capturedAt": "2026-10-15T06:20:00.000Z"
+    },
+    {
+      "id": "srv_021_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-01_7214.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_021-0",
+      "capturedAt": "2026-09-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_021_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-01_6163.jpg",
+      "sizeMb": 26,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_021-1",
+      "capturedAt": "2026-09-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_021_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-01_pass.mp4",
+      "sizeMb": 899,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_021-2",
+      "capturedAt": "2026-09-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_022_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-02_3758.jpg",
+      "sizeMb": 19,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_022-0",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_022_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-02_4030.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_022-1",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_022_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-02_pass.mp4",
+      "sizeMb": 528,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_022-2",
+      "capturedAt": "2026-10-31T06:20:00.000Z"
+    },
+    {
+      "id": "srv_023_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-02_9281.jpg",
+      "sizeMb": 22,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_023-0",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_023_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-02_8184.jpg",
+      "sizeMb": 14,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_023-1",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_023_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-02_pass.mp4",
+      "sizeMb": 429,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_023-2",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_024_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-03_8616.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_024-0",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_024_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-03_4647.jpg",
+      "sizeMb": 16,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_024-1",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_024_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-03_pass.mp4",
+      "sizeMb": 440,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_024-2",
+      "capturedAt": "2026-10-30T06:20:00.000Z"
+    },
+    {
+      "id": "srv_025_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-03_9732.jpg",
+      "sizeMb": 17,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_025-0",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_025_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-03_8925.jpg",
+      "sizeMb": 14,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_025-1",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_025_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-03_pass.mp4",
+      "sizeMb": 596,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_025-2",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_026_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-04_3551.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_026-0",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_026_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-04_8667.jpg",
+      "sizeMb": 25,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_026-1",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_026_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-04_pass.mp4",
+      "sizeMb": 509,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_026-2",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_027_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-04_7762.jpg",
+      "sizeMb": 13,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_027-0",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_027_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-04_7452.jpg",
+      "sizeMb": 17,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_027-1",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_027_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-04_pass.mp4",
+      "sizeMb": 860,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_027-2",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_028_ast_1",
+      "kind": "image",
+      "name": "FLD-NY-04_2597.jpg",
+      "sizeMb": 21,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_028-0",
+      "capturedAt": "2026-09-26T06:20:00.000Z"
+    },
+    {
+      "id": "srv_028_ast_2",
+      "kind": "image",
+      "name": "FLD-NY-04_6872.jpg",
+      "sizeMb": 19,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_028-1",
+      "capturedAt": "2026-09-26T06:20:00.000Z"
+    },
+    {
+      "id": "srv_028_ast_3",
+      "kind": "video",
+      "name": "FLD-NY-04_pass.mp4",
+      "sizeMb": 784,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_028-2",
+      "capturedAt": "2026-09-26T06:20:00.000Z"
+    },
+    {
+      "id": "srv_029_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-01_2699.jpg",
+      "sizeMb": 17,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_029-0",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_029_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-01_4813.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_029-1",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_029_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-01_pass.mp4",
+      "sizeMb": 974,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_029-2",
+      "capturedAt": "2026-11-01T06:20:00.000Z"
+    },
+    {
+      "id": "srv_030_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-01_6753.jpg",
+      "sizeMb": 8,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_030-0",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_030_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-01_2014.jpg",
+      "sizeMb": 12,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_030-1",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_030_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-01_pass.mp4",
+      "sizeMb": 756,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_030-2",
+      "capturedAt": "2026-10-12T06:20:00.000Z"
+    },
+    {
+      "id": "srv_031_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-01_2544.jpg",
+      "sizeMb": 11,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_031-0",
+      "capturedAt": "2026-09-23T06:20:00.000Z"
+    },
+    {
+      "id": "srv_031_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-01_3749.jpg",
+      "sizeMb": 8,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_031-1",
+      "capturedAt": "2026-09-23T06:20:00.000Z"
+    },
+    {
+      "id": "srv_031_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-01_pass.mp4",
+      "sizeMb": 593,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_031-2",
+      "capturedAt": "2026-09-23T06:20:00.000Z"
+    },
+    {
+      "id": "srv_032_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-02_9311.jpg",
+      "sizeMb": 8,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_032-0",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_032_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-02_9080.jpg",
+      "sizeMb": 18,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_032-1",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_032_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-02_pass.mp4",
+      "sizeMb": 594,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_032-2",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_033_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-02_4159.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_033-0",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_033_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-02_9417.jpg",
+      "sizeMb": 17,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_033-1",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_033_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-02_pass.mp4",
+      "sizeMb": 557,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_033-2",
+      "capturedAt": "2026-10-17T06:20:00.000Z"
+    },
+    {
+      "id": "srv_034_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-03_7174.jpg",
+      "sizeMb": 24,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_034-0",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_034_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-03_7701.jpg",
+      "sizeMb": 9,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_034-1",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_034_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-03_pass.mp4",
+      "sizeMb": 506,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_034-2",
+      "capturedAt": "2026-11-02T06:20:00.000Z"
+    },
+    {
+      "id": "srv_035_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-03_1226.jpg",
+      "sizeMb": 25,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_035-0",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_035_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-03_1217.jpg",
+      "sizeMb": 15,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_035-1",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_035_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-03_pass.mp4",
+      "sizeMb": 706,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_035-2",
+      "capturedAt": "2026-10-11T06:20:00.000Z"
+    },
+    {
+      "id": "srv_036_ast_1",
+      "kind": "image",
+      "name": "FLD-BA-04_7339.jpg",
+      "sizeMb": 13,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_036-0",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_036_ast_2",
+      "kind": "image",
+      "name": "FLD-BA-04_2808.jpg",
+      "sizeMb": 14,
+      "width": 5280,
+      "height": 3956,
+      "seed": "srv_036-1",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    },
+    {
+      "id": "srv_036_ast_3",
+      "kind": "video",
+      "name": "FLD-BA-04_pass.mp4",
+      "sizeMb": 810,
+      "width": 3840,
+      "height": 2160,
+      "seed": "srv_036-2",
+      "capturedAt": "2026-10-29T06:20:00.000Z"
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs_001",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_002",
+      "title": "Pest damage — Acacia Block",
+      "category": "Pest damage",
+      "severity": "critical",
+      "confidence": 0.89,
+      "status": "under_review",
+      "detectedAt": "2026-10-17T06:20:00.000Z",
+      "zone": [
+        [
+          36.156929,
+          -0.203489
+        ],
+        [
+          36.156718,
+          -0.203138
+        ],
+        [
+          36.156333,
+          -0.203017
+        ],
+        [
+          36.156056,
+          -0.203303
+        ],
+        [
+          36.155974,
+          -0.203715
+        ],
+        [
+          36.156305,
+          -0.204085
+        ],
+        [
+          36.156743,
+          -0.203872
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_002_ast_3",
+      "observation": "Window-pane feeding damage on whorl leaves across 26% of the sampled canopy.",
+      "interpretation": "Consistent with fall armyworm larval activity. Species is not confirmed from aerial imagery.",
+      "recommendation": "Check five whorls per hectare for larvae and frass before any treatment decision.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-17T10:40:00.000Z"
+    },
+    {
+      "id": "obs_002",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_003",
+      "title": "Weed presence — Acacia Block",
+      "category": "Weed presence",
+      "severity": "high",
+      "confidence": 0.67,
+      "status": "unverified",
+      "detectedAt": "2026-09-28T06:20:00.000Z",
+      "zone": [
+        [
+          36.155575,
+          -0.202602
+        ],
+        [
+          36.155419,
+          -0.202231
+        ],
+        [
+          36.155056,
+          -0.202296
+        ],
+        [
+          36.154761,
+          -0.202425
+        ],
+        [
+          36.154846,
+          -0.202737
+        ],
+        [
+          36.155011,
+          -0.203105
+        ],
+        [
+          36.155409,
+          -0.202959
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_003_ast_1",
+      "observation": "Dense broadleaf patches between rows along the south-east quadrant strip, visible below the crop canopy.",
+      "interpretation": "Possible reduced canopy competition from uneven emergence or missed spray passes.",
+      "recommendation": "Ground-truth the strip and reconcile the area against the spray log for this cycle.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-09-28T10:40:00.000Z"
+    },
+    {
+      "id": "obs_003",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_004",
+      "title": "Crop gaps — North Ridge",
+      "category": "Crop gaps",
+      "severity": "high",
+      "confidence": 0.75,
+      "status": "new",
+      "detectedAt": "2026-10-31T06:20:00.000Z",
+      "zone": null,
+      "areaHa": null,
+      "evidenceAssetId": "srv_004_ast_1",
+      "observation": "Bare-soil gaps following two planting rows, roughly 20% of the stand.",
+      "interpretation": "Suspected planter skip or germination failure; the pattern follows row direction.",
+      "recommendation": "Count plants per metre in three rows and check planter calibration records.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-31T10:40:00.000Z"
+    },
+    {
+      "id": "obs_004",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_004",
+      "title": "Discoloration — North Ridge",
+      "category": "Discoloration",
+      "severity": "medium",
+      "confidence": 0.61,
+      "status": "new",
+      "detectedAt": "2026-10-31T06:20:00.000Z",
+      "zone": [
+        [
+          36.16476,
+          -0.204068
+        ],
+        [
+          36.164551,
+          -0.20378
+        ],
+        [
+          36.164218,
+          -0.203602
+        ],
+        [
+          36.164062,
+          -0.203941
+        ],
+        [
+          36.1639,
+          -0.204273
+        ],
+        [
+          36.164249,
+          -0.204395
+        ],
+        [
+          36.164597,
+          -0.204413
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_004_ast_1",
+      "observation": "Yellowing visible across a 1 ha patch near the drainage line.",
+      "interpretation": "Possible nutrient stress or waterlogging — both plausible, not distinguishable from RGB imagery.",
+      "recommendation": "Sample soil at three points and inspect drainage after the next significant rain.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-31T10:40:00.000Z"
+    },
+    {
+      "id": "obs_005",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_005",
+      "title": "Discoloration — North Ridge",
+      "category": "Discoloration",
+      "severity": "medium",
+      "confidence": 0.62,
+      "status": "resolved",
+      "detectedAt": "2026-10-15T06:20:00.000Z",
+      "zone": [
+        [
+          36.164398,
+          -0.203373
+        ],
+        [
+          36.16417,
+          -0.202723
+        ],
+        [
+          36.163487,
+          -0.202833
+        ],
+        [
+          36.16307,
+          -0.203373
+        ],
+        [
+          36.163421,
+          -0.204029
+        ],
+        [
+          36.164135,
+          -0.203961
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_005_ast_3",
+      "observation": "Yellowing visible across a 0.9 ha patch near the drainage line.",
+      "interpretation": "Possible nutrient stress or waterlogging — both plausible, not distinguishable from RGB imagery.",
+      "recommendation": "Sample soil at three points and inspect drainage after the next significant rain.",
+      "previousObservationId": "obs_004",
+      "reviewedBy": "usr_peter",
+      "reviewNote": "Checked in the field, treated and closed.",
+      "resolvedAt": "2026-10-22T06:20:00.000Z",
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-15T10:40:00.000Z"
+    },
+    {
+      "id": "obs_006",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_009",
+      "title": "Water stress indicators — Kilima East",
+      "category": "Water stress indicators",
+      "severity": "medium",
+      "confidence": 0.82,
+      "status": "under_review",
+      "detectedAt": "2026-10-15T06:20:00.000Z",
+      "zone": [
+        [
+          36.184999,
+          -0.203277
+        ],
+        [
+          36.184773,
+          -0.203011
+        ],
+        [
+          36.184475,
+          -0.202891
+        ],
+        [
+          36.184281,
+          -0.203141
+        ],
+        [
+          36.184251,
+          -0.203428
+        ],
+        [
+          36.184491,
+          -0.203591
+        ],
+        [
+          36.184835,
+          -0.203621
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_009_ast_3",
+      "observation": "Lower canopy reflectance and visible wilting in the south-east quadrant sandy ridge area.",
+      "interpretation": "Potential water stress. Requires soil moisture or thermal data to confirm.",
+      "recommendation": "Take a moisture reading at the ridge and compare against the irrigation schedule.",
+      "previousObservationId": null,
+      "reviewedBy": "usr_grace",
+      "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-15T10:40:00.000Z"
+    },
+    {
+      "id": "obs_007",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_010",
+      "title": "Nutrient stress indicators — Kilima East",
+      "category": "Nutrient stress indicators",
+      "severity": "medium",
+      "confidence": 0.84,
+      "status": "resolved",
+      "detectedAt": "2026-09-22T06:20:00.000Z",
+      "zone": [
+        [
+          36.186499,
+          -0.202793
+        ],
+        [
+          36.186222,
+          -0.202263
+        ],
+        [
+          36.185649,
+          -0.202324
+        ],
+        [
+          36.185422,
+          -0.202793
+        ],
+        [
+          36.185719,
+          -0.203139
+        ],
+        [
+          36.186122,
+          -0.203148
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_010_ast_1",
+      "observation": "Pale lower leaves with a uniform pattern across the north-west corner block.",
+      "interpretation": "Possible nitrogen deficiency. Tissue sampling is required before any application.",
+      "recommendation": "Collect leaf tissue from 12 plants; hold the fertiliser decision until results are in.",
+      "previousObservationId": null,
+      "reviewedBy": "usr_peter",
+      "reviewNote": "Checked in the field, treated and closed.",
+      "resolvedAt": "2026-09-29T06:20:00.000Z",
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-09-22T10:40:00.000Z"
+    },
+    {
+      "id": "obs_008",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_011",
+      "title": "Disease symptoms — Mlima Plot",
+      "category": "Disease symptoms",
+      "severity": "high",
+      "confidence": 0.84,
+      "status": "under_review",
+      "detectedAt": "2026-10-30T06:20:00.000Z",
+      "zone": [
+        [
+          36.154194,
+          -0.19575
+        ],
+        [
+          36.154033,
+          -0.195489
+        ],
+        [
+          36.153745,
+          -0.19551
+        ],
+        [
+          36.153499,
+          -0.19575
+        ],
+        [
+          36.153736,
+          -0.196006
+        ],
+        [
+          36.154013,
+          -0.195977
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_011_ast_1",
+      "observation": "Chlorotic streaking across roughly 32% of plants in the south-east quadrant of the field, with distinct lesion margins.",
+      "interpretation": "Pattern is consistent with early maize streak pressure. Not confirmed — aerial RGB cannot identify the pathogen.",
+      "recommendation": "Scout 10 plants across the affected zone within 48 hours and capture close-up images for agronomist review.",
+      "previousObservationId": null,
+      "reviewedBy": "usr_grace",
+      "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-30T10:40:00.000Z"
+    },
+    {
+      "id": "obs_009",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_012",
+      "title": "Pest damage — Mlima Plot",
+      "category": "Pest damage",
+      "severity": "medium",
+      "confidence": 0.9,
+      "status": "resolved",
+      "detectedAt": "2026-10-17T06:20:00.000Z",
+      "zone": [
+        [
+          36.156193,
+          -0.195039
+        ],
+        [
+          36.155879,
+          -0.194708
+        ],
+        [
+          36.155497,
+          -0.194513
+        ],
+        [
+          36.155194,
+          -0.194834
+        ],
+        [
+          36.155209,
+          -0.195237
+        ],
+        [
+          36.155505,
+          -0.195532
+        ],
+        [
+          36.155921,
+          -0.195423
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_012_ast_1",
+      "observation": "Window-pane feeding damage on whorl leaves across 18% of the sampled canopy.",
+      "interpretation": "Consistent with fall armyworm larval activity. Species is not confirmed from aerial imagery.",
+      "recommendation": "Check five whorls per hectare for larvae and frass before any treatment decision.",
+      "previousObservationId": null,
+      "reviewedBy": "usr_peter",
+      "reviewNote": "Checked in the field, treated and closed.",
+      "resolvedAt": "2026-10-24T06:20:00.000Z",
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-17T10:40:00.000Z"
+    },
+    {
+      "id": "obs_010",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_012",
+      "title": "Crop gaps — Mlima Plot",
+      "category": "Crop gaps",
+      "severity": "low",
+      "confidence": 0.79,
+      "status": "unverified",
+      "detectedAt": "2026-10-17T06:20:00.000Z",
+      "zone": null,
+      "areaHa": null,
+      "evidenceAssetId": "srv_012_ast_1",
+      "observation": "Bare-soil gaps following two planting rows, roughly 31% of the stand.",
+      "interpretation": "Suspected planter skip or germination failure; the pattern follows row direction.",
+      "recommendation": "Count plants per metre in three rows and check planter calibration records.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-17T10:40:00.000Z"
+    },
+    {
+      "id": "obs_011",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_017",
+      "title": "Crop gaps — Boundary Strip",
+      "category": "Crop gaps",
+      "severity": "high",
+      "confidence": 0.95,
+      "status": "unverified",
+      "detectedAt": "2026-10-31T06:20:00.000Z",
+      "zone": null,
+      "areaHa": null,
+      "evidenceAssetId": "srv_017_ast_1",
+      "observation": "Bare-soil gaps following two planting rows, roughly 13% of the stand.",
+      "interpretation": "Suspected planter skip or germination failure; the pattern follows row direction.",
+      "recommendation": "Count plants per metre in three rows and check planter calibration records.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-31T10:40:00.000Z"
+    },
+    {
+      "id": "obs_012",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_017",
+      "title": "Discoloration — Boundary Strip",
+      "category": "Discoloration",
+      "severity": "medium",
+      "confidence": 0.68,
+      "status": "new",
+      "detectedAt": "2026-10-31T06:20:00.000Z",
+      "zone": [
+        [
+          36.185437,
+          -0.195114
+        ],
+        [
+          36.185182,
+          -0.194788
+        ],
+        [
+          36.184811,
+          -0.194615
+        ],
+        [
+          36.184351,
+          -0.194836
+        ],
+        [
+          36.184443,
+          -0.195347
+        ],
+        [
+          36.184815,
+          -0.195597
+        ],
+        [
+          36.185192,
+          -0.195453
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_017_ast_1",
+      "observation": "Yellowing visible across a 0.4 ha patch near the drainage line.",
+      "interpretation": "Possible nutrient stress or waterlogging — both plausible, not distinguishable from RGB imagery.",
+      "recommendation": "Sample soil at three points and inspect drainage after the next significant rain.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-31T10:40:00.000Z"
+    },
+    {
+      "id": "obs_013",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "surveyId": "srv_018",
+      "title": "Discoloration — Boundary Strip",
+      "category": "Discoloration",
+      "severity": "medium",
+      "confidence": 0.69,
+      "status": "resolved",
+      "detectedAt": "2026-10-11T06:20:00.000Z",
+      "zone": [
+        [
+          36.186055,
+          -0.196872
+        ],
+        [
+          36.185944,
+          -0.196644
+        ],
+        [
+          36.185711,
+          -0.196641
+        ],
+        [
+          36.185501,
+          -0.196745
+        ],
+        [
+          36.185495,
+          -0.197002
+        ],
+        [
+          36.185694,
+          -0.19718
+        ],
+        [
+          36.185941,
+          -0.197097
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_018_ast_1",
+      "observation": "Yellowing visible across a 0.2 ha patch near the drainage line.",
+      "interpretation": "Possible nutrient stress or waterlogging — both plausible, not distinguishable from RGB imagery.",
+      "recommendation": "Sample soil at three points and inspect drainage after the next significant rain.",
+      "previousObservationId": "obs_012",
+      "reviewedBy": "usr_peter",
+      "reviewNote": "Checked in the field, treated and closed.",
+      "resolvedAt": "2026-10-18T06:20:00.000Z",
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-11T10:40:00.000Z"
+    },
+    {
+      "id": "obs_014",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "surveyId": "srv_024",
+      "title": "Water stress indicators — Windmill Block",
+      "category": "Water stress indicators",
+      "severity": "critical",
+      "confidence": 0.86,
+      "status": "under_review",
+      "detectedAt": "2026-10-30T06:20:00.000Z",
+      "zone": [
+        [
+          35.826183,
+          -1.04739
+        ],
+        [
+          35.826109,
+          -1.047009
+        ],
+        [
+          35.82573,
+          -1.046746
+        ],
+        [
+          35.825399,
+          -1.047057
+        ],
+        [
+          35.825122,
+          -1.04739
+        ],
+        [
+          35.825225,
+          -1.047899
+        ],
+        [
+          35.82573,
+          -1.048006
+        ],
+        [
+          35.826154,
+          -1.047817
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_024_ast_1",
+      "observation": "Lower canopy reflectance and visible wilting in the north-east quadrant sandy ridge area.",
+      "interpretation": "Potential water stress. Requires soil moisture or thermal data to confirm.",
+      "recommendation": "Take a moisture reading at the ridge and compare against the irrigation schedule.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-30T10:40:00.000Z"
+    },
+    {
+      "id": "obs_015",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "surveyId": "srv_024",
+      "title": "Disease symptoms — Windmill Block",
+      "category": "Disease symptoms",
+      "severity": "medium",
+      "confidence": 0.68,
+      "status": "under_review",
+      "detectedAt": "2026-10-30T06:20:00.000Z",
+      "zone": [
+        [
+          35.82424,
+          -1.047807
+        ],
+        [
+          35.824141,
+          -1.047566
+        ],
+        [
+          35.823883,
+          -1.04751
+        ],
+        [
+          35.823728,
+          -1.0477
+        ],
+        [
+          35.82363,
+          -1.047962
+        ],
+        [
+          35.823899,
+          -1.048032
+        ],
+        [
+          35.824154,
+          -1.048064
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_024_ast_1",
+      "observation": "Chlorotic streaking across roughly 18% of plants in the north-west corner of the field, with distinct lesion margins.",
+      "interpretation": "Pattern is consistent with early maize streak pressure. Not confirmed — aerial RGB cannot identify the pathogen.",
+      "recommendation": "Scout 10 plants across the affected zone within 48 hours and capture close-up images for agronomist review.",
+      "previousObservationId": null,
+      "reviewedBy": "usr_grace",
+      "reviewNote": "Flagged for agronomist review. Not yet verified in the field.",
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-30T10:40:00.000Z"
+    },
+    {
+      "id": "obs_016",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "surveyId": "srv_025",
+      "title": "Disease symptoms — Windmill Block",
+      "category": "Disease symptoms",
+      "severity": "high",
+      "confidence": 0.74,
+      "status": "recurring",
+      "detectedAt": "2026-10-11T06:20:00.000Z",
+      "zone": [
+        [
+          35.827684,
+          -1.047089
+        ],
+        [
+          35.827159,
+          -1.046622
+        ],
+        [
+          35.826513,
+          -1.046429
+        ],
+        [
+          35.826256,
+          -1.047089
+        ],
+        [
+          35.826508,
+          -1.047756
+        ],
+        [
+          35.827249,
+          -1.047713
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_025_ast_1",
+      "observation": "Chlorotic streaking across roughly 24% of plants in the south-east quadrant of the field, with distinct lesion margins.",
+      "interpretation": "Pattern is consistent with early maize streak pressure. Not confirmed — aerial RGB cannot identify the pathogen.",
+      "recommendation": "Scout 10 plants across the affected zone within 48 hours and capture close-up images for agronomist review.",
+      "previousObservationId": "obs_015",
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-11T10:40:00.000Z"
+    },
+    {
+      "id": "obs_017",
+      "fieldId": "fld_nyota_04",
+      "farmId": "farm_nyota",
+      "surveyId": "srv_026",
+      "title": "Pest damage — Olkeri Plot",
+      "category": "Pest damage",
+      "severity": "medium",
+      "confidence": 0.83,
+      "status": "unverified",
+      "detectedAt": "2026-10-29T06:20:00.000Z",
+      "zone": [
+        [
+          35.83612,
+          -1.04634
+        ],
+        [
+          35.836107,
+          -1.046049
+        ],
+        [
+          35.835822,
+          -1.046099
+        ],
+        [
+          35.835561,
+          -1.046187
+        ],
+        [
+          35.83566,
+          -1.046445
+        ],
+        [
+          35.835818,
+          -1.0466
+        ],
+        [
+          35.836097,
+          -1.046617
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_026_ast_1",
+      "observation": "Window-pane feeding damage on whorl leaves across 9% of the sampled canopy.",
+      "interpretation": "Consistent with fall armyworm larval activity. Species is not confirmed from aerial imagery.",
+      "recommendation": "Check five whorls per hectare for larvae and frass before any treatment decision.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-29T10:40:00.000Z"
+    },
+    {
+      "id": "obs_018",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "surveyId": "srv_030",
+      "title": "Pest damage — Baraka Home",
+      "category": "Pest damage",
+      "severity": "critical",
+      "confidence": 0.86,
+      "status": "under_review",
+      "detectedAt": "2026-10-12T06:20:00.000Z",
+      "zone": [
+        [
+          35.094255,
+          0.597366
+        ],
+        [
+          35.094109,
+          0.59763
+        ],
+        [
+          35.093795,
+          0.597831
+        ],
+        [
+          35.09346,
+          0.59758
+        ],
+        [
+          35.093612,
+          0.597226
+        ],
+        [
+          35.093827,
+          0.597043
+        ],
+        [
+          35.094098,
+          0.597118
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_030_ast_1",
+      "observation": "Dense broadleaf patches between rows along the north-east quadrant strip, visible below the crop canopy.",
+      "interpretation": "Possible reduced canopy competition from uneven emergence or missed spray passes.",
+      "recommendation": "Ground-truth the strip and reconcile the area against the spray log for this cycle.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-12T10:40:00.000Z"
+    },
+    {
+      "id": "obs_019",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "surveyId": "srv_031",
+      "title": "Crop gaps — Baraka Home",
+      "category": "Crop gaps",
+      "severity": "medium",
+      "confidence": 0.76,
+      "status": "unverified",
+      "detectedAt": "2026-09-23T06:20:00.000Z",
+      "zone": null,
+      "areaHa": null,
+      "evidenceAssetId": "srv_031_ast_1",
+      "observation": "Bare-soil gaps following two planting rows, roughly 19% of the stand.",
+      "interpretation": "Suspected planter skip or germination failure; the pattern follows row direction.",
+      "recommendation": "Count plants per metre in three rows and check planter calibration records.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-09-23T10:40:00.000Z"
+    },
+    {
+      "id": "obs_020",
+      "fieldId": "fld_baraka_02",
+      "farmId": "farm_baraka",
+      "surveyId": "srv_033",
+      "title": "Growth variability — Baraka West",
+      "category": "Growth variability",
+      "severity": "medium",
+      "confidence": 0.62,
+      "status": "new",
+      "detectedAt": "2026-10-17T06:20:00.000Z",
+      "zone": [
+        [
+          35.106373,
+          0.595835
+        ],
+        [
+          35.106023,
+          0.596142
+        ],
+        [
+          35.105657,
+          0.596373
+        ],
+        [
+          35.105334,
+          0.59605
+        ],
+        [
+          35.105313,
+          0.595609
+        ],
+        [
+          35.105666,
+          0.595335
+        ],
+        [
+          35.10604,
+          0.595505
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_033_ast_1",
+      "observation": "Canopy height differs by about 10% between the south-west strip and the opposite half of the field.",
+      "interpretation": "Could reflect soil depth, drainage or uneven irrigation. Imagery alone cannot separate these causes.",
+      "recommendation": "Compare against the soil map and last season's yield map before intervening.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-17T10:40:00.000Z"
+    },
+    {
+      "id": "obs_021",
+      "fieldId": "fld_baraka_02",
+      "farmId": "farm_baraka",
+      "surveyId": "srv_033",
+      "title": "Water stress indicators — Baraka West",
+      "category": "Water stress indicators",
+      "severity": "medium",
+      "confidence": 0.85,
+      "status": "unverified",
+      "detectedAt": "2026-10-17T06:20:00.000Z",
+      "zone": [
+        [
+          35.104083,
+          0.595781
+        ],
+        [
+          35.104034,
+          0.596181
+        ],
+        [
+          35.103637,
+          0.596344
+        ],
+        [
+          35.103254,
+          0.596167
+        ],
+        [
+          35.103192,
+          0.595781
+        ],
+        [
+          35.103317,
+          0.595459
+        ],
+        [
+          35.103637,
+          0.595365
+        ],
+        [
+          35.10404,
+          0.595375
+        ]
+      ],
+      "areaHa": 0.95,
+      "evidenceAssetId": "srv_033_ast_1",
+      "observation": "Lower canopy reflectance and visible wilting in the north-west corner sandy ridge area.",
+      "interpretation": "Potential water stress. Requires soil moisture or thermal data to confirm.",
+      "recommendation": "Take a moisture reading at the ridge and compare against the irrigation schedule.",
+      "previousObservationId": null,
+      "reviewedBy": null,
+      "reviewNote": null,
+      "resolvedAt": null,
+      "model": "SAM 3.1 · Muse Spark",
+      "modelRunAt": "2026-10-17T10:40:00.000Z"
+    }
+  ],
+  "actions": [
+    {
+      "id": "tsk_001",
+      "title": "Scout the affected zone for larvae",
+      "description": "Walk a W pattern across the flagged zone, inspect five whorls per hectare and record larval counts.",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "observationId": "obs_001",
+      "assigneeId": "usr_peter",
+      "priority": "high",
+      "status": "todo",
+      "dueDate": "2026-11-03",
+      "createdAt": "2026-10-30T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_002",
+      "title": "Collect leaf tissue samples",
+      "description": "Take 12 leaf samples from the flagged block and submit them to the lab for nutrient analysis.",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "observationId": "obs_004",
+      "assigneeId": "usr_faith",
+      "priority": "medium",
+      "status": "todo",
+      "dueDate": "2026-11-13",
+      "createdAt": "2026-10-22T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_003",
+      "title": "Re-check drainage after rainfall",
+      "description": "Inspect the drainage line 24 hours after the next rain and photograph any standing water.",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "observationId": "obs_007",
+      "assigneeId": "usr_grace",
+      "priority": "low",
+      "status": "todo",
+      "dueDate": "2026-11-03",
+      "createdAt": "2026-10-30T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_004",
+      "title": "Count plants per metre",
+      "description": "Measure establishment in three rows and compare against the planter calibration log.",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "observationId": "obs_010",
+      "assigneeId": "usr_peter",
+      "priority": "medium",
+      "status": "todo",
+      "dueDate": "2026-11-06",
+      "createdAt": "2026-10-29T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_005",
+      "title": "Photograph the affected canopy",
+      "description": "Capture close-up images of the flagged plants, including a scale reference.",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "observationId": "obs_013",
+      "assigneeId": "usr_faith",
+      "priority": "high",
+      "status": "todo",
+      "dueDate": "2026-11-10",
+      "createdAt": "2026-10-25T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_006",
+      "title": "Confirm spray record for the block",
+      "description": "Reconcile the spray log with the weed patches visible in the latest survey.",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "observationId": "obs_016",
+      "assigneeId": "usr_grace",
+      "priority": "medium",
+      "status": "in_progress",
+      "dueDate": "2026-11-07",
+      "createdAt": "2026-10-28T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_007",
+      "title": "Scout the affected zone for larvae",
+      "description": "Walk a W pattern across the flagged zone, inspect five whorls per hectare and record larval counts.",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "observationId": "obs_019",
+      "assigneeId": "usr_peter",
+      "priority": "low",
+      "status": "in_progress",
+      "dueDate": "2026-11-09",
+      "createdAt": "2026-10-26T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_008",
+      "title": "Collect leaf tissue samples",
+      "description": "Take 12 leaf samples from the flagged block and submit them to the lab for nutrient analysis.",
+      "fieldId": "fld_kilima_01",
+      "farmId": "farm_kilima",
+      "observationId": "obs_001",
+      "assigneeId": "usr_faith",
+      "priority": "medium",
+      "status": "in_progress",
+      "dueDate": "2026-11-11",
+      "createdAt": "2026-10-24T07:30:00.000Z",
+      "completedAt": null,
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_009",
+      "title": "Re-check drainage after rainfall",
+      "description": "Inspect the drainage line 24 hours after the next rain and photograph any standing water.",
+      "fieldId": "fld_kilima_02",
+      "farmId": "farm_kilima",
+      "observationId": "obs_004",
+      "assigneeId": "usr_grace",
+      "priority": "high",
+      "status": "completed",
+      "dueDate": "2026-10-23",
+      "createdAt": "2026-10-19T07:30:00.000Z",
+      "completedAt": "2026-10-24T15:10:00.000Z",
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_010",
+      "title": "Count plants per metre",
+      "description": "Measure establishment in three rows and compare against the planter calibration log.",
+      "fieldId": "fld_kilima_04",
+      "farmId": "farm_kilima",
+      "observationId": "obs_007",
+      "assigneeId": "usr_peter",
+      "priority": "medium",
+      "status": "completed",
+      "dueDate": "2026-10-29",
+      "createdAt": "2026-10-25T07:30:00.000Z",
+      "completedAt": "2026-10-30T15:10:00.000Z",
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_011",
+      "title": "Photograph the affected canopy",
+      "description": "Capture close-up images of the flagged plants, including a scale reference.",
+      "fieldId": "fld_kilima_05",
+      "farmId": "farm_kilima",
+      "observationId": "obs_010",
+      "assigneeId": "usr_faith",
+      "priority": "low",
+      "status": "completed",
+      "dueDate": "2026-10-18",
+      "createdAt": "2026-10-14T07:30:00.000Z",
+      "completedAt": "2026-10-19T15:10:00.000Z",
+      "verifiedAt": null,
+      "evidence": null
+    },
+    {
+      "id": "tsk_012",
+      "title": "Confirm spray record for the block",
+      "description": "Reconcile the spray log with the weed patches visible in the latest survey.",
+      "fieldId": "fld_kilima_08",
+      "farmId": "farm_kilima",
+      "observationId": "obs_013",
+      "assigneeId": "usr_grace",
+      "priority": "medium",
+      "status": "verified",
+      "dueDate": "2026-10-23",
+      "createdAt": "2026-10-19T07:30:00.000Z",
+      "completedAt": "2026-10-24T15:10:00.000Z",
+      "verifiedAt": "2026-10-25T08:45:00.000Z",
+      "evidence": "Photo evidence attached by assignee"
+    },
+    {
+      "id": "tsk_013",
+      "title": "Scout the affected zone for larvae",
+      "description": "Walk a W pattern across the flagged zone, inspect five whorls per hectare and record larval counts.",
+      "fieldId": "fld_nyota_03",
+      "farmId": "farm_nyota",
+      "observationId": "obs_016",
+      "assigneeId": "usr_peter",
+      "priority": "high",
+      "status": "verified",
+      "dueDate": "2026-10-28",
+      "createdAt": "2026-10-24T07:30:00.000Z",
+      "completedAt": "2026-10-29T15:10:00.000Z",
+      "verifiedAt": "2026-10-30T08:45:00.000Z",
+      "evidence": "Photo evidence attached by assignee"
+    },
+    {
+      "id": "tsk_014",
+      "title": "Collect leaf tissue samples",
+      "description": "Take 12 leaf samples from the flagged block and submit them to the lab for nutrient analysis.",
+      "fieldId": "fld_baraka_01",
+      "farmId": "farm_baraka",
+      "observationId": "obs_019",
+      "assigneeId": "usr_faith",
+      "priority": "medium",
+      "status": "verified",
+      "dueDate": "2026-10-26",
+      "createdAt": "2026-10-22T07:30:00.000Z",
+      "completedAt": "2026-10-27T15:10:00.000Z",
+      "verifiedAt": "2026-10-28T08:45:00.000Z",
+      "evidence": "Photo evidence attached by assignee"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rpt_001",
+      "type": "Farm inspection report",
+      "title": "Kilima Farm — October inspection summary",
+      "farmId": "farm_kilima",
+      "fieldId": null,
+      "periodStart": "2026-09-25",
+      "periodEnd": "2026-10-31",
+      "createdAt": "2026-10-31T14:20:00.000Z",
+      "createdBy": "usr_david",
+      "status": "ready",
+      "reviewed": true,
+      "pages": 14
+    },
+    {
+      "id": "rpt_002",
+      "type": "Field health report",
+      "title": "North Ridge — crop health comparison",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "periodStart": "2026-09-15",
+      "periodEnd": "2026-11-01",
+      "createdAt": "2026-11-01T11:05:00.000Z",
+      "createdBy": "usr_grace",
+      "status": "ready",
+      "reviewed": true,
+      "pages": 8
+    },
+    {
+      "id": "rpt_003",
+      "type": "Drone survey report",
+      "title": "Nyota North — multispectral pass",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "periodStart": "2026-10-05",
+      "periodEnd": "2026-10-15",
+      "createdAt": "2026-10-15T08:40:00.000Z",
+      "createdBy": "usr_grace",
+      "status": "draft",
+      "reviewed": false,
+      "pages": 6
+    },
+    {
+      "id": "rpt_004",
+      "type": "Outstanding issues report",
+      "title": "Open observations older than 14 days",
+      "farmId": null,
+      "fieldId": null,
+      "periodStart": "2026-09-05",
+      "periodEnd": "2026-11-04",
+      "createdAt": "2026-11-03T07:15:00.000Z",
+      "createdBy": "usr_amara",
+      "status": "ready",
+      "reviewed": false,
+      "pages": 5
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_rpt_004",
+      "farmId": null,
+      "fieldId": null,
+      "at": "2026-11-03T07:15:00.000Z",
+      "kind": "report",
+      "title": "Open observations older than 14 days",
+      "detail": "Outstanding issues report · 5 pages",
+      "actorId": "usr_amara"
+    },
+    {
+      "id": "evt_srv_034_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_03",
+      "at": "2026-11-02T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Sugut Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_019_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-11-02T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Nyota North · 92 images · 39.1 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_034_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_03",
+      "at": "2026-11-02T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Sugut Block · 279 images · 28.5 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_rpt_002",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-11-01T11:05:00.000Z",
+      "kind": "report",
+      "title": "North Ridge — crop health comparison",
+      "detail": "Field health report · 8 pages",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_008_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-11-01T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Kilima East",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_029_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-11-01T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Baraka Home",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_008_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-11-01T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Kilima East · 358 images · 32.1 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_029_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-11-01T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Baraka Home · 266 images · 37.8 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_rpt_001",
+      "farmId": "farm_kilima",
+      "fieldId": null,
+      "at": "2026-10-31T14:20:00.000Z",
+      "kind": "report",
+      "title": "Kilima Farm — October inspection summary",
+      "detail": "Farm inspection report · 14 pages",
+      "actorId": "usr_david"
+    },
+    {
+      "id": "evt_srv_004_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-31T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "2 observations generated",
+      "detail": "North Ridge",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_017_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-31T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "2 observations generated",
+      "detail": "Boundary Strip",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_004_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-31T10:05:00.000Z",
+      "kind": "survey",
+      "title": "Thermal survey uploaded",
+      "detail": "North Ridge · 341 images · 31.6 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_015_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_07",
+      "at": "2026-10-31T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "School Block · 411 images · 45.5 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_017_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-31T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Boundary Strip · 226 images · 50.1 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_022_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_02",
+      "at": "2026-10-31T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Nyota South · 231 images · 42.4 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_010",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-10-30T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Count plants per metre",
+      "detail": "Assigned to Peter Mwangi",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_006_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_03",
+      "at": "2026-10-30T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Riverside",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_011_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-30T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Mlima Plot",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_024_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-30T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "2 observations generated",
+      "detail": "Windmill Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_006_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_03",
+      "at": "2026-10-30T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Riverside · 396 images · 49.3 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_011_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-30T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Mlima Plot · 456 images · 48.9 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_024_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-30T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Windmill Block · 383 images · 44.4 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_001",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-30T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Scout the affected zone for larvae",
+      "detail": "Assigned to Peter Mwangi",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_tsk_003",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-10-30T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Re-check drainage after rainfall",
+      "detail": "Assigned to Grace Wanjiru",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_013",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-29T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Scout the affected zone for larvae",
+      "detail": "Assigned to Peter Mwangi",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_001_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-29T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Acacia Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_013_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_06",
+      "at": "2026-10-29T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Dam Field",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_026_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-10-29T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Olkeri Plot",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_001_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Acacia Block · 404 images · 35.1 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_013_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_06",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Dam Field · 366 images · 34.6 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_026_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Olkeri Plot · 275 images · 26.6 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_032_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_02",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Baraka West · 352 images · 24.6 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_032_fail",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_02",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "system",
+      "title": "Survey processing failed",
+      "detail": "GeoTIFF could not be georeferenced: the file is missing a coordinate reference system.",
+      "actorId": null
+    },
+    {
+      "id": "evt_srv_036_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_04",
+      "at": "2026-10-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Kapsoya Plot · 156 images · 42.3 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_tsk_004",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-29T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Count plants per metre",
+      "detail": "Assigned to Peter Mwangi",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_tsk_006",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-28T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Confirm spray record for the block",
+      "detail": "Assigned to Grace Wanjiru",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_014",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-10-27T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Collect leaf tissue samples",
+      "detail": "Assigned to Faith Achieng",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_tsk_007",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-10-26T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Scout the affected zone for larvae",
+      "detail": "Assigned to Peter Mwangi",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_tsk_005",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-25T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Photograph the affected canopy",
+      "detail": "Assigned to Faith Achieng",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_tsk_009",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-24T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Re-check drainage after rainfall",
+      "detail": "Assigned to Grace Wanjiru",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_012",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-24T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Confirm spray record for the block",
+      "detail": "Assigned to Grace Wanjiru",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_tsk_008",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-24T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Collect leaf tissue samples",
+      "detail": "Assigned to Faith Achieng",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_tsk_002",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-22T07:30:00.000Z",
+      "kind": "action",
+      "title": "Task created: Collect leaf tissue samples",
+      "detail": "Assigned to Faith Achieng",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_tsk_011",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-19T15:10:00.000Z",
+      "kind": "action",
+      "title": "Task completed: Photograph the affected canopy",
+      "detail": "Assigned to Faith Achieng",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_002_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-17T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Acacia Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_012_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-17T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "2 observations generated",
+      "detail": "Mlima Plot",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_023_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_02",
+      "at": "2026-10-17T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Nyota South",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_033_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_02",
+      "at": "2026-10-17T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "2 observations generated",
+      "detail": "Baraka West",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_002_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-10-17T10:05:00.000Z",
+      "kind": "survey",
+      "title": "Multispectral survey uploaded",
+      "detail": "Acacia Block · 340 images · 36.9 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_012_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_05",
+      "at": "2026-10-17T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Mlima Plot · 101 images · 48 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_016_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_07",
+      "at": "2026-10-17T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "School Block · 193 images · 47.4 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_023_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_02",
+      "at": "2026-10-17T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Nyota South · 151 images · 45.6 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_033_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_02",
+      "at": "2026-10-17T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Baraka West · 155 images · 27.7 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_005_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-15T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "North Ridge",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_009_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-10-15T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Kilima East",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_014_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_06",
+      "at": "2026-10-15T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Dam Field",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_020_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-10-15T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Nyota North",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_005_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_02",
+      "at": "2026-10-15T10:05:00.000Z",
+      "kind": "survey",
+      "title": "Multispectral survey uploaded",
+      "detail": "North Ridge · 456 images · 30.4 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_009_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-10-15T10:05:00.000Z",
+      "kind": "survey",
+      "title": "Multispectral survey uploaded",
+      "detail": "Kilima East · 304 images · 33.1 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_014_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_06",
+      "at": "2026-10-15T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Dam Field · 336 images · 36.5 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_020_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-10-15T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Nyota North · 193 images · 37.9 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_rpt_003",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-10-15T08:40:00.000Z",
+      "kind": "report",
+      "title": "Nyota North — multispectral pass",
+      "detail": "Drone survey report · 6 pages",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_027_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-10-12T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Olkeri Plot",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_030_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-10-12T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Baraka Home",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_027_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-10-12T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Olkeri Plot · 379 images · 27.1 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_030_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-10-12T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Baraka Home · 326 images · 35.7 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_007_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_03",
+      "at": "2026-10-11T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Riverside",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_018_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-11T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Boundary Strip",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_025_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-11T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Windmill Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_035_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_03",
+      "at": "2026-10-11T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Sugut Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_007_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_03",
+      "at": "2026-10-11T10:05:00.000Z",
+      "kind": "survey",
+      "title": "Multispectral survey uploaded",
+      "detail": "Riverside · 290 images · 47.4 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_018_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_08",
+      "at": "2026-10-11T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Boundary Strip · 437 images · 48.3 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_025_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_03",
+      "at": "2026-10-11T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Windmill Block · 132 images · 41.8 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_035_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_03",
+      "at": "2026-10-11T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Sugut Block · 326 images · 31.2 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_021_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-09-29T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Nyota North",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_021_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_01",
+      "at": "2026-09-29T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Nyota North · 218 images · 40.1 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_003_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-09-28T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Acacia Block",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_003_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_01",
+      "at": "2026-09-28T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Acacia Block · 170 images · 34.8 ha covered",
+      "actorId": "usr_faith"
+    },
+    {
+      "id": "evt_srv_028_done",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-09-26T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "Analysis completed without findings",
+      "detail": "Olkeri Plot",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_028_up",
+      "farmId": "farm_nyota",
+      "fieldId": "fld_nyota_04",
+      "at": "2026-09-26T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Olkeri Plot · 318 images · 26.6 ha covered",
+      "actorId": "usr_peter"
+    },
+    {
+      "id": "evt_srv_031_done",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-09-23T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Baraka Home",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_031_up",
+      "farmId": "farm_baraka",
+      "fieldId": "fld_baraka_01",
+      "at": "2026-09-23T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Baraka Home · 235 images · 36.6 ha covered",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_010_done",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-09-22T10:40:00.000Z",
+      "kind": "analysis",
+      "title": "1 observation generated",
+      "detail": "Kilima East",
+      "actorId": "usr_grace"
+    },
+    {
+      "id": "evt_srv_010_up",
+      "farmId": "farm_kilima",
+      "fieldId": "fld_kilima_04",
+      "at": "2026-09-22T10:05:00.000Z",
+      "kind": "survey",
+      "title": "RGB survey uploaded",
+      "detail": "Kilima East · 356 images · 28.9 ha covered",
+      "actorId": "usr_grace"
+    }
+  ]
+}
