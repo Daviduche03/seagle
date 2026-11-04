@@ -107,6 +107,36 @@ npm start                 # serves dist/ and /api on :8787
 The API and the SPA ship as one process. `META_API_KEY`, `META_BASE_URL`,
 `META_MODEL`, `META_VISION_MODEL` and `DATABASE_PATH` are the only settings.
 
+## Deploy
+
+The app is one Node process serving `dist/` and `/api`, so any host that runs Node works.
+`node:sqlite` needs Node **22.5 or newer**.
+
+**Render** — `render.yaml` is a blueprint: New → Blueprint → pick this repo → set
+`META_API_KEY` when prompted. Free plan works; the database reseeds on each deploy
+because the filesystem is ephemeral, which is fine for a demo.
+
+**Docker / Fly.io** — a `Dockerfile` is included:
+
+```bash
+flyctl apps create <name>
+flyctl volumes create seagle_data --region <region> --size 1 -a <name>
+flyctl secrets set META_API_KEY=... -a <name>
+flyctl deploy -a <name>
+```
+
+The volume is mounted at `/data` and `DATABASE_PATH=/data/seagle.db`, so writes survive
+restarts.
+
+**Temporary public URL** — for a quick demo without a host:
+
+```bash
+npm run build && npm start            # :8787, serves app + api
+cloudflared tunnel --url http://localhost:8787
+```
+
+That URL lives only while the machine and the tunnel are running.
+
 ## Demo path
 
 1. **Overview** — 17 open findings, 8 need a decision.

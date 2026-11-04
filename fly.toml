@@ -1,0 +1,32 @@
+app = "seagle-farm-2026"
+primary_region = "jnb"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "8787"
+  DATABASE_PATH = "/data/seagle.db"
+
+[[mounts]]
+  source = "seagle_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8787
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
+
+[checks.health]
+  type = "http"
+  port = 8787
+  path = "/api/health"
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "20s"
