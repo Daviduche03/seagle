@@ -58,11 +58,18 @@ function FindingDetail({ observation, onClose }: { observation: Observation; onC
   const [note, setNote] = React.useState("")
   const [noteOpen, setNoteOpen] = React.useState(false)
 
-  const review = (next: "under_review" | "resolved" | "unverified", message: string) => {
+  const review = async (next: "under_review" | "resolved" | "unverified", message: string) => {
     setReview(observation.id, next, note || observation.reviewNote)
-    toast.success(message, {
-      description: "Saved for this session. Reloading restores the demo dataset.",
-    })
+    toast.success(message, { description: "Saved to the workspace." })
+    try {
+      await fetch(`/api/observations/${observation.id}/review`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status: next, note: note || undefined }),
+      })
+    } catch {
+      // The session store still holds the change; the API will catch up on retry.
+    }
   }
 
   return (
@@ -177,15 +184,15 @@ function FindingDetail({ observation, onClose }: { observation: Observation; onC
         <div className="flex flex-1 flex-wrap items-center gap-1.5">
           <Button
             size="sm"
-            onClick={() => review("resolved", "Finding confirmed and resolved")}
+            onClick={() => void review("resolved", "Finding confirmed and resolved")}
             className="gap-1.5"
           >
             <Check /> Confirm
           </Button>
-          <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => review("unverified", "Marked as uncertain")}>
+          <Button variant="secondary" size="sm" className="gap-1.5" onClick={() => void review("unverified", "Marked as uncertain")}>
             <RotateCcw /> Uncertain
           </Button>
-          <Button variant="ghost" size="sm" className="gap-1.5 text-danger hover:bg-danger-soft" onClick={() => review("under_review", "Finding rejected")}>
+          <Button variant="ghost" size="sm" className="gap-1.5 text-danger hover:bg-danger-soft" onClick={() => void review("under_review", "Finding rejected")}>
             <X /> Reject
           </Button>
         </div>

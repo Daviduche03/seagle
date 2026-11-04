@@ -353,6 +353,7 @@ function UploadDialog({
   const [result, setResult] = React.useState<FrameAnalysis | null>(null)
   const [error, setError] = React.useState<string | null>(null)
   const [activePrompt, setActivePrompt] = React.useState<string | null>(null)
+  const [savedSurveyId, setSavedSurveyId] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     if (!open) {
@@ -364,6 +365,7 @@ function UploadDialog({
       setResult(null)
       setError(null)
       setActivePrompt(null)
+      setSavedSurveyId(null)
     }
   }, [open])
 
@@ -422,7 +424,28 @@ function UploadDialog({
           const body = (await response.json().catch(() => null)) as { message?: string; error?: string } | null
           throw new Error(body?.message ?? body?.error ?? `Analysis failed (${response.status})`)
         }
-        setResult((await response.json()) as FrameAnalysis)
+        const analysis = (await response.json()) as FrameAnalysis
+        setResult(analysis)
+
+        // Persist the frame and its findings so the field history moves forward.
+        if (analysis.observations.length > 0) {
+          const saved = await fetch("/api/surveys", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              fieldId,
+              sensor,
+              summary: analysis.summary,
+              limitations: analysis.limitations,
+              observations: analysis.observations,
+              model: "sam-3.1 + muse-spark-1.3",
+            }),
+          })
+          if (saved.ok) {
+            const body = (await saved.json()) as { surveyId: string }
+            setSavedSurveyId(body.surveyId)
+          }
+        }
       })
       .catch((cause: unknown) => {
         setError(cause instanceof Error ? cause.message : "Analysis failed")
@@ -653,16 +676,27 @@ function UploadDialog({
 
             <div className="flex items-center justify-between gap-2 border-t pt-3">
               <span className="text-[10.5px] text-muted-foreground">
-                {result ? "SAM 3.1 + Muse Spark on Meta Model API." : "Demo run."}
+                {savedSurveyId
+                  ? "Saved to the field history."
+                  : result
+                    ? "SAM 3.1 + Muse Spark on Meta Model API."
+                    : "Nothing saved."}
               </span>
               <div className="flex gap-2">
                 <Button variant="secondary" size="sm" onClick={() => onOpenChange(false)}>
                   Close
                 </Button>
-                <Button size="sm" className="gap-1" asChild disabled={!field}>
-                  <Link to={field ? `/fields/${field.id}` : "#"}>
-                    Open field <ArrowRight />
-                  </Link>
+                <Button
+                  size="sm"
+                  className="gap-1"
+                  disabled={!field}
+                  onClick={() => {
+                    if (!field) return
+                    // Full navigation so the field reloads from /api/bootstrap.
+                    window.location.assign(`/fields/${field.id}`)
+                  }}
+                >
+                  Open field <ArrowRight />
                 </Button>
               </div>
             </div>

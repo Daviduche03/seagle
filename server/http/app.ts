@@ -8,6 +8,8 @@ import { analysisRouter } from "../modules/analysis/analysis.routes"
 import { assistantRouter } from "../modules/assistant/assistant.routes"
 import { reportsRouter } from "../modules/reports/reports.routes"
 import { workspaceRouter } from "../modules/workspace/workspace.routes"
+import { observationsRouter } from "../modules/observations/observations.routes"
+import { surveysRouter } from "../modules/surveys/surveys.routes"
 
 export function createApp() {
   const app = express()
@@ -21,6 +23,8 @@ export function createApp() {
 
   app.use("/api", workspaceRouter)
   app.use("/api", analysisRouter)
+  app.use("/api", observationsRouter)
+  app.use("/api", surveysRouter)
   app.use("/api", assistantRouter)
   app.use("/api", reportsRouter)
 
