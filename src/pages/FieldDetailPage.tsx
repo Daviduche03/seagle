@@ -73,7 +73,7 @@ export function FieldDetailPage() {
         }
         actions={
           <Button className="gap-1.5" asChild>
-            <Link to="/drone?upload=1">
+            <Link to={`/drone?upload=1&field=${field.id}`}>
               <Plus /> New inspection
             </Link>
           </Button>
