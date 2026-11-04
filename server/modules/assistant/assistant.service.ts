@@ -14,7 +14,12 @@ Rules:
 - Never invent numbers, dates, fields or findings.
 - No marketing tone. Write like an agronomist.`
 
-export async function answerQuestion(question: string) {
+const FORMAT = {
+  json: "Answer as JSON with the fields the schema requires.",
+  text: "Reply in plain text, at most five sentences and under 100 words. Name fields by name only — never include record ids such as fld_… Never add a citations list, JSON, headings or bullet lists.",
+} as const
+
+export function buildAssistantInput(question: string, mode: keyof typeof FORMAT = "json") {
   const workspace = getWorkspace()
 
   const context = {
@@ -44,12 +49,22 @@ export async function answerQuestion(question: string) {
       })),
   }
 
+  return {
+    system: `${SYSTEM}\n${FORMAT[mode]}`,
+    prompt: `Workspace records:\n${JSON.stringify(context)}\n\nQuestion: ${question}`,
+  }
+}
+
+export async function answerQuestion(question: string) {
+  const workspace = getWorkspace()
+  const { system, prompt } = buildAssistantInput(question, "json")
+
   const result = await generateObject({
     model: textModel,
     schema: assistantResultSchema,
     temperature: 0.2,
-    system: SYSTEM,
-    prompt: `Workspace records:\n${JSON.stringify(context)}\n\nQuestion: ${question}`,
+    system,
+    prompt,
   })
 
   const known = new Set(workspace.fields.map((field) => field.id))

@@ -29,12 +29,6 @@ const suggestions = [
   "What changed in North Ridge since the previous inspection?",
 ]
 
-interface Answer {
-  answer: string
-  citations: string[]
-  followUps?: string[]
-}
-
 export function AssistantPanel({ open, onOpenChange }: { open: boolean; onOpenChange: (v: boolean) => void }) {
   const [messages, setMessages] = React.useState<Msg[]>([])
   const [input, setInput] = React.useState("")
@@ -73,20 +67,36 @@ export function AssistantPanel({ open, onOpenChange }: { open: boolean; onOpenCh
     ])
     setBusy(true)
 
+    const replace = (content: React.ReactNode) =>
+      setMessages((prev) => prev.map((msg) => (msg.id === pending ? { ...msg, content } : msg)))
+
     try {
-      const response = await fetch("/api/assistant", {
+      const response = await fetch("/api/assistant/stream", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: trimmed }),
       })
-      if (!response.ok) throw new Error(`status ${response.status}`)
-      const data = (await response.json()) as Answer
-      setMessages((prev) => prev.map((msg) => (msg.id === pending ? { ...msg, content: <LiveAnswer data={data} /> } : msg)))
+      if (!response.ok || !response.body) throw new Error(`status ${response.status}`)
+
+      const reader = response.body.getReader()
+      const decoder = new TextDecoder()
+      let text = ""
+      let first = true
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        text += decoder.decode(value, { stream: true })
+        if (first && text.trim()) {
+          first = false
+          setMode("live")
+        }
+        replace(<StreamedAnswer text={text} />)
+      }
+      replace(<StreamedAnswer text={text} />)
     } catch {
       setMode("demo")
-      setMessages((prev) =>
-        prev.map((msg) => (msg.id === pending ? { ...msg, content: answer(trimmed) } : msg)),
-      )
+      replace(answer(trimmed))
     } finally {
       setBusy(false)
     }
@@ -189,34 +199,22 @@ export function AssistantPanel({ open, onOpenChange }: { open: boolean; onOpenCh
   )
 }
 
-function LiveAnswer({ data }: { data: Answer }) {
+function StreamedAnswer({ text }: { text: string }) {
+  const cited = fields.filter((field) => text.toLowerCase().includes(field.name.toLowerCase()))
   return (
     <div className="space-y-2">
-      <p>{data.answer}</p>
-      {data.citations.length > 0 && (
+      <p className="whitespace-pre-wrap">{text}</p>
+      {cited.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
-          {data.citations.map((id) => {
-            const field = getField(id)
-            if (!field) return null
-            return (
-              <Link
-                key={id}
-                to={`/fields/${id}`}
-                className="inline-flex items-center gap-1 rounded-md border border-border bg-muted/40 px-1.5 py-0.5 text-[10.5px] text-foreground hover:bg-muted"
-              >
-                <Leaf className="size-2.5 text-muted-foreground" />
-                {field.name}
-              </Link>
-            )
-          })}
-        </div>
-      )}
-      {data.followUps && data.followUps.length > 0 && (
-        <div className="space-y-1 border-t pt-2">
-          {data.followUps.slice(0, 2).map((item) => (
-            <p key={item} className="text-[10.5px] text-muted-foreground">
-              · {item}
-            </p>
+          {cited.slice(0, 5).map((field) => (
+            <Link
+              key={field.id}
+              to={`/fields/${field.id}`}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-muted/40 px-1.5 py-0.5 text-[10.5px] hover:bg-muted"
+            >
+              <Leaf className="size-2.5 text-muted-foreground" />
+              {field.name}
+            </Link>
           ))}
         </div>
       )}
