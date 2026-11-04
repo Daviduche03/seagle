@@ -10,8 +10,6 @@ import { Avatar } from "@/components/ui/avatar"
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import { AccountDialog } from "./AccountDialog"
 
-const currentUser = getMember(team[0].id)!
-
 const row =
   "group relative flex h-[34px] w-full items-center gap-[11px] rounded-lg px-2 text-left text-[13px] leading-none font-[450] transition-colors"
 
@@ -26,6 +24,11 @@ export function Sidebar({
 }) {
   const location = useLocation()
   const [accountOpen, setAccountOpen] = React.useState(false)
+  const currentUser = getMember(team[0]?.id) ?? {
+    id: "unknown",
+    name: "Workspace",
+    role: "Not signed in",
+  }
   const counts = {
     attention: escalatedObservations().length,
     actions: dueActions().length,

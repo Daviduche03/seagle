@@ -1,4 +1,3 @@
-import fixture from "./seed.json"
 import type {
   Farm,
   Field,
@@ -10,11 +9,35 @@ import type {
 } from "./types"
 
 /**
- * The workspace is loaded from the API (SQLite behind it) once at boot.
- * The bundled fixture is the offline fallback, so the demo still opens if the
- * API is down — it is the same shape, just stale.
+ * The workspace comes from the API (SQLite behind it), loaded once at boot.
+ * There is no bundled dataset any more: if the API is unreachable the app shows
+ * an explicit offline screen instead of stale fixtures.
  */
-let state = fixture as unknown as Seed
+const EMPTY: Seed = {
+  generatedAt: "",
+  organization: {
+    id: "",
+    name: "",
+    legalName: "",
+    country: "",
+    region: "",
+    timezone: "",
+    plan: "",
+    createdAt: "",
+  },
+  team: [],
+  farms: [],
+  fields: [],
+  cropCycles: [],
+  surveys: [],
+  assets: [],
+  observations: [],
+  actions: [],
+  reports: [],
+  events: [],
+}
+
+let state: Seed = EMPTY
 
 export let seed: Seed = state
 export let organization = state.organization
@@ -58,18 +81,17 @@ export function initWorkspace(data: Seed) {
   rebuild()
 }
 
-/** Prefer the API, fall back to the fixture. Called once before the app renders. */
-export async function loadWorkspace(): Promise<"api" | "fixture"> {
+/** Loads the workspace. False means the API could not be reached. */
+export async function loadWorkspace(): Promise<boolean> {
   try {
     const response = await fetch("/api/bootstrap")
     if (!response.ok) throw new Error(`status ${response.status}`)
     const data = (await response.json()) as Seed
     if (!data?.farms?.length) throw new Error("empty workspace")
     initWorkspace(data)
-    return "api"
+    return true
   } catch {
-    rebuild()
-    return "fixture"
+    return false
   }
 }
 

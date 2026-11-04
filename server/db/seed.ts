@@ -25,7 +25,7 @@ export function seedDatabase() {
   const row = db.prepare("SELECT COUNT(*) AS count FROM farms").get() as { count: number }
   if (row.count > 0) return
 
-  const seedPath = resolve(process.cwd(), "src/data/seed.json")
+  const seedPath = resolve(process.cwd(), "server/db/seed.json")
   const seed = JSON.parse(readFileSync(seedPath, "utf8")) as SeedShape
 
   const org = seed.organization

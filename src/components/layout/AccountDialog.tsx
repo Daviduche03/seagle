@@ -19,10 +19,14 @@ import { Avatar } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
 import { organization, team, getMember } from "@/data/store"
 
-const currentUser = getMember(team[0].id)!
-
 export function AccountDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {
   const navigate = useNavigate()
+  const currentUser = getMember(team[0]?.id) ?? {
+    id: "unknown",
+    name: "Workspace",
+    role: "Not signed in",
+    email: "",
+  }
   const contentRef = React.useRef<HTMLDivElement>(null)
   const activeMembers = team.filter((member) => member.status === "active").length
 

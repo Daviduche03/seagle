@@ -1,5 +1,5 @@
 /**
- * Generates src/data/seed.json — the static demo dataset for the Seagle frontend.
+ * Generates server/db/seed.json — the static demo dataset for the Seagle frontend.
  *
  * Deterministic: same seed in, same data out (dates are anchored to the day the
  * script runs, so re-run `npm run seed` before a demo to keep the timeline fresh).
@@ -723,7 +723,7 @@ const seed = {
   events,
 }
 
-const out = resolve(__dirname, "../src/data/seed.json")
+const out = resolve(__dirname, "../server/db/seed.json")
 mkdirSync(dirname(out), { recursive: true })
 writeFileSync(out, JSON.stringify(seed, null, 2))
 

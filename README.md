@@ -69,7 +69,7 @@ SQLite (`data/seagle.db`) via Node's built-in `node:sqlite` — no native module
 file. Ten tables: organizations, team, farms, fields, crop cycles, surveys,
 observations, actions, reports, events.
 
-The database seeds itself on first boot from `src/data/seed.json`, so a fresh deploy
+The database seeds itself on first boot from `server/db/seed.json`, so a fresh deploy
 starts with a coherent workspace. The same fixture is bundled into the SPA as an
 offline fallback: if the API is unreachable the interface still opens.
 
