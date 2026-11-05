@@ -104,6 +104,10 @@ npm run build
 npm start                 # serves dist/ and /api on :8787
 ```
 
+If you split the deployment (static frontend, API elsewhere), build the frontend with
+`VITE_API_BASE_URL=https://your-api-host` and set `ALLOW_ORIGIN` on the API to the
+frontend origin. Otherwise leave both unset: the SPA calls `/api` on its own origin.
+
 The API and the SPA ship as one process. `META_API_KEY`, `META_BASE_URL`,
 `META_MODEL`, `META_VISION_MODEL` and `DATABASE_PATH` are the only settings.
 

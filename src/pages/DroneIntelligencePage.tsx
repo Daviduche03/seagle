@@ -1,4 +1,5 @@
 import * as React from "react"
+import { apiUrl } from "@/lib/api"
 import { Link, useSearchParams } from "react-router-dom"
 import {
   ArrowRight,
@@ -414,7 +415,7 @@ function UploadDialog({
 
     if (!file) return
 
-    void fetch("/api/analysis", {
+    void fetch(apiUrl("/api/analysis"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ fieldId, image: file.dataUrl, sensor, capturedAt: new Date().toISOString() }),
@@ -429,7 +430,7 @@ function UploadDialog({
 
         // Persist the frame and its findings so the field history moves forward.
         if (analysis.observations.length > 0) {
-          const saved = await fetch("/api/surveys", {
+          const saved = await fetch(apiUrl("/api/surveys"), {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { apiUrl } from "@/lib/api"
 import { Link } from "react-router-dom"
 import {
   ArrowUpRight,
@@ -62,7 +63,7 @@ function FindingDetail({ observation, onClose }: { observation: Observation; onC
     setReview(observation.id, next, note || observation.reviewNote)
     toast.success(message, { description: "Saved to the workspace." })
     try {
-      await fetch(`/api/observations/${observation.id}/review`, {
+      await fetch(apiUrl(`/api/observations/${observation.id}/review`), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: next, note: note || undefined }),

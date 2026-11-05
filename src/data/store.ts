@@ -1,3 +1,4 @@
+import { apiUrl } from "@/lib/api"
 import type {
   Farm,
   Field,
@@ -84,7 +85,7 @@ export function initWorkspace(data: Seed) {
 /** Loads the workspace. False means the API could not be reached. */
 export async function loadWorkspace(): Promise<boolean> {
   try {
-    const response = await fetch("/api/bootstrap")
+    const response = await fetch(apiUrl("/api/bootstrap"))
     if (!response.ok) throw new Error(`status ${response.status}`)
     const data = (await response.json()) as Seed
     if (!data?.farms?.length) throw new Error("empty workspace")

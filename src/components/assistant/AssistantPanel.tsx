@@ -1,4 +1,5 @@
 import * as React from "react"
+import { apiUrl } from "@/lib/api"
 import { Link } from "react-router-dom"
 import { ArrowUpRight, CornerDownLeft, Leaf, Loader2, Sparkles } from "lucide-react"
 import { Sheet, SheetBody, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet"
@@ -37,7 +38,7 @@ export function AssistantPanel({ open, onOpenChange }: { open: boolean; onOpenCh
   const endRef = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => {
-    fetch("/api/health")
+    fetch(apiUrl("/api/health"))
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => setMode(data?.ai ? "live" : "demo"))
       .catch(() => setMode("demo"))
@@ -71,7 +72,7 @@ export function AssistantPanel({ open, onOpenChange }: { open: boolean; onOpenCh
       setMessages((prev) => prev.map((msg) => (msg.id === pending ? { ...msg, content } : msg)))
 
     try {
-      const response = await fetch("/api/assistant/stream", {
+      const response = await fetch(apiUrl("/api/assistant/stream"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: trimmed }),
